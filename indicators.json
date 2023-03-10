@@ -1,0 +1,857 @@
+[
+  {
+    "goal": {
+      "id": "1",
+      "title": "Armut in allen ihren Formen und überall beenden",
+      "indicators": [
+        
+        {
+          "id": "1-1",
+          "title": "SGB II-/SGB XII-Bezug",
+          "description": "",
+          "keywords": "",
+          "href": "/1-1",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-a",
+          "title": "Armut bei Kindern (< 15 Jahre; Bedarfsgemeinschaften)",
+          "description": "",
+          "keywords": "",
+          "href": "/1-2-a",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-b",
+          "title": "Armut bei Jugendlichen (15 – 17 Jahre; Bedarfsgemeinschaften)",
+          "description": "",
+          "keywords": "",
+          "href": "/1-2-b",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-c",
+          "title": "Armut bei Älteren (> 65 Jahre)",
+          "description": "",
+          "keywords": "",
+          "href": "/1-2-c",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "2",
+      "title": "Den Hunger beenden, Ernährungssicherheit und eine bessere Ernährung erreichen und eine nachhaltige Landwirtschaft fördern",
+      "indicators": [
+        
+        {
+          "id": "2-1",
+          "title": "Kinder mit Fehlernährung",
+          "description": "",
+          "keywords": "",
+          "href": "/2-1",
+          "status": "complete"
+        },
+        {
+          "id": "2-2",
+          "title": "Ökologische Landwirtschaft",
+          "description": "",
+          "keywords": "",
+          "href": "/2-2",
+          "status": "complete"
+        },
+        {
+          "id": "2-3",
+          "title": "Stickstoffüberschuss",
+          "description": "",
+          "keywords": "",
+          "href": "/2-3",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "3",
+      "title": "Ein gesundes Leben für alle Menschen jeden Alters gewährleisten und ihr Wohlergehen fördern",
+      "indicators": [
+        
+        {
+          "id": "3-1",
+          "title": "Wohnungsnahe Grundversorgung - Hausarzt",
+          "description": "",
+          "keywords": "",
+          "href": "/3-1",
+          "status": "complete"
+        },
+        {
+          "id": "3-2",
+          "title": "Krankenhausversorgung",
+          "description": "",
+          "keywords": "",
+          "href": "/3-2",
+          "status": "complete"
+        },
+        {
+          "id": "3-3",
+          "title": "Krankenhausbetten in der Psychiatrie",
+          "description": "",
+          "keywords": "",
+          "href": "/3-3",
+          "status": "complete"
+        },
+        {
+          "id": "3-4",
+          "title": "Vorzeitige Sterblichkeit",
+          "description": "",
+          "keywords": "",
+          "href": "/3-4",
+          "status": "complete"
+        },
+        {
+          "id": "3-5",
+          "title": "Alkoholbedingte Krankenhausaufenthalte von Jugendlichen",
+          "description": "",
+          "keywords": "",
+          "href": "/3-5",
+          "status": "complete"
+        },
+        {
+          "id": "3-6",
+          "title": "Selbsttötung und Selbstschädigung mit Todesfolge",
+          "description": "",
+          "keywords": "",
+          "href": "/3-6",
+          "status": "complete"
+        },
+        {
+          "id": "3-7",
+          "title": "Plätze in Pflegeheimen",
+          "description": "",
+          "keywords": "",
+          "href": "/3-7",
+          "status": "complete"
+        },
+        {
+          "id": "3-8",
+          "title": "Personal in Pflegeheimen",
+          "description": "",
+          "keywords": "",
+          "href": "/3-8",
+          "status": "complete"
+        },
+        {
+          "id": "3-9",
+          "title": "Personal in Pflegediensten",
+          "description": "",
+          "keywords": "",
+          "href": "/3-9",
+          "status": "complete"
+        },
+        {
+          "id": "3-10",
+          "title": "Masern-Infektionen",
+          "description": "",
+          "keywords": "",
+          "href": "/3-10",
+          "status": "complete"
+        },
+        {
+          "id": "3-11",
+          "title": "Luftqualität",
+          "description": "",
+          "keywords": "",
+          "href": "/3-11",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "4",
+      "title": "Inklusive, gleichberechtigte und hochwertige Bildung gewährleisten und Möglichkeiten lebenslangen Lernens für alle fördern",
+      "indicators": [
+        
+        {
+          "id": "4-1",
+          "title": "Betreuungsquote von Kleinkindern (unter 3-Jährige)",
+          "description": "",
+          "keywords": "",
+          "href": "/4-1",
+          "status": "complete"
+        },
+        {
+          "id": "4-2",
+          "title": "Betreuungsquote von Kindern (3- bis 6-Jährige)",
+          "description": "",
+          "keywords": "",
+          "href": "/4-2",
+          "status": "complete"
+        },
+        {
+          "id": "4-3",
+          "title": "Schulabbrecherquote",
+          "description": "",
+          "keywords": "",
+          "href": "/4-3",
+          "status": "complete"
+        },
+        {
+          "id": "4-4",
+          "title": "Schulabschluss",
+          "description": "",
+          "keywords": "",
+          "href": "/4-4",
+          "status": "complete"
+        },
+        {
+          "id": "4-5",
+          "title": "Auszubildende",
+          "description": "",
+          "keywords": "",
+          "href": "/4-5",
+          "status": "complete"
+        },
+        {
+          "id": "4-6",
+          "title": "Kooperationsquote",
+          "description": "",
+          "keywords": "",
+          "href": "/4-6",
+          "status": "complete"
+        },
+        {
+          "id": "4-7",
+          "title": "Vermittlungsquote (erster Arbeitsmarkt)",
+          "description": "",
+          "keywords": "",
+          "href": "/4-7",
+          "status": "complete"
+        },
+        {
+          "id": "4-8",
+          "title": "Exklusionsquote",
+          "description": "",
+          "keywords": "",
+          "href": "/4-8",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "5",
+      "title": "Geschlechtergleichstellung erreichen und alle Frauen und Mädchen zur Selbstbestimmung befähigen",
+      "indicators": [
+        
+        {
+          "id": "5-1-a",
+          "title": "Vollzeitbeschäftigungsquoten von Frauen und Männern",
+          "description": "",
+          "keywords": "",
+          "href": "/5-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "5-1-b",
+          "title": "Anteil der teilzeitbeschäftigten Frauen",
+          "description": "",
+          "keywords": "",
+          "href": "/5-1-b",
+          "status": "complete"
+        },
+        {
+          "id": "5-2",
+          "title": "Relative Frauenarmut",
+          "description": "",
+          "keywords": "",
+          "href": "/5-2",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "6",
+      "title": "Verfügbarkeit und nachhaltige Bewirtschaftung von Wasser und Sanitärversorgung für alle gewährleisten",
+      "indicators": [
+        
+        {
+          "id": "6-1",
+          "title": "Ausweisung von Wasserschutzgebieten",
+          "description": "",
+          "keywords": "",
+          "href": "/6-1",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "7",
+      "title": "Zugang zu bezahlbarer, verlässlicher, nachhaltiger und moderner Energie für alle sichern",
+      "indicators": [
+        
+        {
+          "id": "7-1-a",
+          "title": "Endenergieverbrauch LRA",
+          "description": "",
+          "keywords": "",
+          "href": "/7-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "7-1-b",
+          "title": "Endenergieverbrauch Enzkreis (gesamt)",
+          "description": "",
+          "keywords": "",
+          "href": "/7-1-b",
+          "status": "complete"
+        },
+        {
+          "id": "7-1-c",
+          "title": "Jährliche Einsparung/ Absenkpfad",
+          "description": "",
+          "keywords": "",
+          "href": "/7-1-c",
+          "status": "complete"
+        },
+        {
+          "id": "7-2-a",
+          "title": "Erneuerbare Energien – Anteil am Endenergieverbrauch",
+          "description": "",
+          "keywords": "",
+          "href": "/7-2-a",
+          "status": "complete"
+        },
+        {
+          "id": "7-2-b",
+          "title": "Erneuerbare Energien – Zubaurate (Enzkreis)",
+          "description": "",
+          "keywords": "",
+          "href": "/7-2-b",
+          "status": "complete"
+        },
+        {
+          "id": "7-2-c",
+          "title": "Erneuerbare Energien – Installierte Leistung (Enzkreis)",
+          "description": "",
+          "keywords": "",
+          "href": "/7-2-c",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "8",
+      "title": "Dauerhaftes, breitenwirksames und nachhaltiges Wirtschaftswachstum, produktive Vollbeschäftigung und menschenwürdige Arbeit für alle fördern",
+      "indicators": [
+        
+        {
+          "id": "8-1",
+          "title": "Bruttoinlandsprodukt",
+          "description": "",
+          "keywords": "",
+          "href": "/8-1",
+          "status": "complete"
+        },
+        {
+          "id": "8-2-a",
+          "title": "Arbeitssuchende (gesamt)",
+          "description": "",
+          "keywords": "",
+          "href": "/8-2-a",
+          "status": "complete"
+        },
+        {
+          "id": "8-2-b",
+          "title": "Rohstoff-Fußabdruck, Rohstoff-Fußabdruck pro Kopf und Rohstoff-Fußabdruck pro BIP",
+          "description": "",
+          "keywords": "",
+          "href": "/8-2-b",
+          "status": "complete"
+        },
+        {
+          "id": "8-2-c",
+          "title": "Jugendarbeitslosigkeit (15- bis 25-Jährige)",
+          "description": "",
+          "keywords": "",
+          "href": "/8-2-c",
+          "status": "complete"
+        },
+        {
+          "id": "8-2-d",
+          "title": "Arbeitslosigkeit bei über 55-Jährigen",
+          "description": "",
+          "keywords": "",
+          "href": "/8-2-d",
+          "status": "complete"
+        },
+        {
+          "id": "8-3-a",
+          "title": "Langzeitarbeitslose (gesamt)",
+          "description": "",
+          "keywords": "",
+          "href": "/8-3-a",
+          "status": "complete"
+        },
+        {
+          "id": "8-3-b",
+          "title": "Frauenlangzeitarbeitslosigkeit",
+          "description": "",
+          "keywords": "",
+          "href": "/8-3-b",
+          "status": "complete"
+        },
+        {
+          "id": "8-3-c",
+          "title": "Männerlangzeitarbeitslosigkeit",
+          "description": "",
+          "keywords": "",
+          "href": "/8-3-c",
+          "status": "complete"
+        },
+        {
+          "id": "8-4",
+          "title": "Beschäftigungsquote",
+          "description": "",
+          "keywords": "",
+          "href": "/8-4",
+          "status": "complete"
+        },
+        {
+          "id": "8-5",
+          "title": "Erwerbsaufstocker",
+          "description": "",
+          "keywords": "",
+          "href": "/8-5",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "9",
+      "title": "Eine widerstandsfähige Infrastruktur aufbauen, breitenwirksame und nachhaltige Industrialisierung fördern und Innovationen unterstützen",
+      "indicators": [
+        
+        {
+          "id": "9-1",
+          "title": "Existenzgründungen",
+          "description": "",
+          "keywords": "",
+          "href": "/9-1",
+          "status": "complete"
+        },
+        {
+          "id": "9-2",
+          "title": "Innovationsindex",
+          "description": "",
+          "keywords": "",
+          "href": "/9-2",
+          "status": "complete"
+        },
+        {
+          "id": "9-3",
+          "title": "Hochqualifizierte",
+          "description": "",
+          "keywords": "",
+          "href": "/9-3",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "10",
+      "title": "Ungleichheit in und zwischen Ländern verringern",
+      "indicators": [
+        
+        {
+          "id": "10-1-a",
+          "title": "Einkommensverteilung - Haushalte mit niedrigem Einkommen",
+          "description": "",
+          "keywords": "",
+          "href": "/10-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "10-1-b",
+          "title": "Einkommensverteilung - Haushalte mit mittlerem Einkommen",
+          "description": "",
+          "keywords": "",
+          "href": "/10-1-b",
+          "status": "complete"
+        },
+        {
+          "id": "10-1-c",
+          "title": "Einkommensverteilung - Haushalte mit hohem Einkommen",
+          "description": "",
+          "keywords": "",
+          "href": "/10-1-c",
+          "status": "complete"
+        },
+        {
+          "id": "10-2",
+          "title": "Relative Beschäftigungsquote von AusländerInnen",
+          "description": "",
+          "keywords": "",
+          "href": "/10-2",
+          "status": "complete"
+        },
+        {
+          "id": "10-3",
+          "title": "Relative Armutsquote bei AusländerInnen",
+          "description": "",
+          "keywords": "",
+          "href": "/10-3",
+          "status": "complete"
+        },
+        {
+          "id": "10-4",
+          "title": "Relative Schulabbrecherquote von AusländerInnen",
+          "description": "",
+          "keywords": "",
+          "href": "/10-4",
+          "status": "complete"
+        },
+        {
+          "id": "10-5",
+          "title": "Einbürgerungen",
+          "description": "",
+          "keywords": "",
+          "href": "/10-5",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "11",
+      "title": "Städte und Siedlungen inklusiv, sicher, widerstandsfähig und nachhaltig gestalten",
+      "indicators": [
+        
+        {
+          "id": "11-1",
+          "title": "Mietpreise",
+          "description": "",
+          "keywords": "",
+          "href": "/11-1",
+          "status": "complete"
+        },
+        {
+          "id": "11-2",
+          "title": "Flächenremanenz",
+          "description": "",
+          "keywords": "",
+          "href": "/11-2",
+          "status": "complete"
+        },
+        {
+          "id": "11-3",
+          "title": "Wohnfläche",
+          "description": "",
+          "keywords": "",
+          "href": "/11-3",
+          "status": "complete"
+        },
+        {
+          "id": "11-4",
+          "title": "Modal Split",
+          "description": "",
+          "keywords": "",
+          "href": "/11-4",
+          "status": "complete"
+        },
+        {
+          "id": "11-5",
+          "title": "Kfz-Dichte",
+          "description": "",
+          "keywords": "",
+          "href": "/11-5",
+          "status": "complete"
+        },
+        {
+          "id": "11-6",
+          "title": "Verunglückte im Straßenverkehr",
+          "description": "",
+          "keywords": "",
+          "href": "/11-6",
+          "status": "complete"
+        },
+        {
+          "id": "11-7-a",
+          "title": "Flächeninanspruchnahme - Anteil Siedlungs- und Verkehrsfläche",
+          "description": "",
+          "keywords": "",
+          "href": "/11-7-a",
+          "status": "complete"
+        },
+        {
+          "id": "11-7-b",
+          "title": "Flächeninanspruchnahme - Zuwachs gegenüber Vorjahr",
+          "description": "",
+          "keywords": "",
+          "href": "/11-7-b",
+          "status": "complete"
+        },
+        {
+          "id": "11-7-c",
+          "title": "Flächeninanspruchnahme - Nutzungsintensität je EinwohnerInnen",
+          "description": "",
+          "keywords": "",
+          "href": "/11-7-c",
+          "status": "complete"
+        },
+        {
+          "id": "11-8",
+          "title": "Naherholungsfläche",
+          "description": "",
+          "keywords": "",
+          "href": "/11-8",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "12",
+      "title": "Nachhaltige Konsum- und Produktionsmuster sicherstellen",
+      "indicators": [
+        
+        {
+          "id": "12-1-a",
+          "title": "Trinkwasserabgabe – Verbrauch (Haushalte und Kleingewerbe)",
+          "description": "",
+          "keywords": "",
+          "href": "/12-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "12-1-b",
+          "title": "Trinkwasserabgabe – Leitungsverluste",
+          "description": "",
+          "keywords": "",
+          "href": "/12-1-b",
+          "status": "complete"
+        },
+        {
+          "id": "12-2",
+          "title": "Abfallmenge",
+          "description": "",
+          "keywords": "",
+          "href": "/12-2",
+          "status": "complete"
+        },
+        {
+          "id": "12-3",
+          "title": "Unterstützer der WIN-Charta des Landes Baden-Württemberg",
+          "description": "",
+          "keywords": "",
+          "href": "/12-3",
+          "status": "complete"
+        },
+        {
+          "id": "12-4",
+          "title": "Anteil von Recyclingpapier in der Verwaltung",
+          "description": "",
+          "keywords": "",
+          "href": "/12-4",
+          "status": "complete"
+        },
+        {
+          "id": "12-5",
+          "title": "Fairtrade-Towns im Landkreis",
+          "description": "",
+          "keywords": "",
+          "href": "/12-5",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "13",
+      "title": "Umgehend Maßnahmen zur Bekämpfung des Klimawandels und seiner Auswirkungen ergreifen",
+      "indicators": [
+        
+        {
+          "id": "13-1-a",
+          "title": "Treibhausgas-Emissionen – Landratsamt",
+          "description": "",
+          "keywords": "",
+          "href": "/13-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "13-1-b",
+          "title": "Treibhausgas-Emissionen – Enzkreis gesamt",
+          "description": "",
+          "keywords": "",
+          "href": "/13-1-b",
+          "status": "complete"
+        },
+        {
+          "id": "13-1-c",
+          "title": "Treibhausgas-Emissionen – jährliche Einsparung",
+          "description": "",
+          "keywords": "",
+          "href": "/13-1-c",
+          "status": "complete"
+        },
+        {
+          "id": "13-1-d",
+          "title": "Treibhausgas-Emissionen - Erreichen der Klimaziele",
+          "description": "",
+          "keywords": "",
+          "href": "/13-1-d",
+          "status": "complete"
+        },
+        {
+          "id": "13-2-a",
+          "title": "Platzierung im European Energy Award – Ergebnis %",
+          "description": "",
+          "keywords": "",
+          "href": "/13-2-a",
+          "status": "complete"
+        },
+        {
+          "id": "13-2-b",
+          "title": "Platzierung im European Energy Award – Vergleich BW, Bund",
+          "description": "",
+          "keywords": "",
+          "href": "/13-2-b",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "14",
+      "title": "Ozeane, Meere und Meeresressourcen im Sinne nachhaltiger Entwicklung erhalten und nachhaltig nutzen",
+      "indicators": [
+        
+        {
+          "id": "14-1",
+          "title": "Abwasserbehandlung in Kläranlagen",
+          "description": "",
+          "keywords": "",
+          "href": "/14-1",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "15",
+      "title": "Landökosysteme schützen, wiederherstellen und ihre nachhaltige Nutzung fördern, Wälder nachhaltig bewirtschaften, Wüstenbildung bekämpfen, Bodendegradation beenden und umkehren und dem Verlust der biologischen Vielfalt ein Ende setzen",
+      "indicators": [
+        
+        {
+          "id": "15-1",
+          "title": "Naturschutzflächen",
+          "description": "",
+          "keywords": "",
+          "href": "/15-1",
+          "status": "complete"
+        },
+        {
+          "id": "15-2",
+          "title": "Altlasten mit Handlungsbedarf (Flächenanzahl)",
+          "description": "",
+          "keywords": "",
+          "href": "/15-2",
+          "status": "complete"
+        },
+        {
+          "id": "15-3",
+          "title": "Landschaftsqualität (Hemerobie-Index)",
+          "description": "",
+          "keywords": "",
+          "href": "/15-3",
+          "status": "complete"
+        },
+        {
+          "id": "15-4",
+          "title": "Unzerschnittene Freiraumflächen > 50 km2",
+          "description": "",
+          "keywords": "",
+          "href": "/15-4",
+          "status": "complete"
+        },
+        {
+          "id": "15-5",
+          "title": "Streuobstwiesenfläche",
+          "description": "",
+          "keywords": "",
+          "href": "/15-5",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "16",
+      "title": "Friedliche und inklusive Gesellschaften für eine nachhaltige Entwicklung fördern, allen Menschen Zugang zur Justiz ermöglichen und leistungsfähige, rechenschaftspflichtige und inklusive Institutionen auf allen Ebenen aufbauen",
+      "indicators": [
+        
+        {
+          "id": "16-1",
+          "title": "Straftaten",
+          "description": "",
+          "keywords": "",
+          "href": "/16-1",
+          "status": "complete"
+        },
+        {
+          "id": "16-2",
+          "title": "Gesamtverschuldung",
+          "description": "",
+          "keywords": "",
+          "href": "/16-2",
+          "status": "complete"
+        },
+        {
+          "id": "16-3",
+          "title": "Wahlbeteiligung bei Kommunalwahlen",
+          "description": "",
+          "keywords": "",
+          "href": "/16-3",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "17",
+      "title": "Umsetzungsmittel stärken und die Globale Partnerschaft für nachhaltige Entwicklung mit neuem Leben erfüllen",
+      "indicators": [
+        
+        {
+          "id": "17-1-a",
+          "title": "Kommunale Partnerschaften (Aufgewendete Mittel)",
+          "description": "",
+          "keywords": "",
+          "href": "/17-1-a",
+          "status": "complete"
+        },
+        {
+          "id": "17-1-b",
+          "title": "Kommunale Partnerschaften (Anteil Fördermittel)",
+          "description": "",
+          "keywords": "",
+          "href": "/17-1-b",
+          "status": "complete"
+        },
+        {
+          "id": "17-2",
+          "title": "Entwicklungspolitische Projekte",
+          "description": "",
+          "keywords": "",
+          "href": "/17-2",
+          "status": "complete"
+        }]
+    }
+  }]
