@@ -127,7 +127,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230310173638">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230313132003">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -162,32 +162,30 @@ layout-goal
     <div class="container d-flex justify-content-between">
 
         <div>
-            <a class="navbar-brand" href="/" id="home" style="position:relative; top:0.7rem; bottom: 0.5rem;">
+            <a class="navbar-brand" href="/" id="home">
                 <img src="/assets/img/Mission_logo.png"
                 onmouseover="this.src='/assets/img/Mission_logo.png'"
                 onmouseout="this.src='/assets/img/Mission_logo.png'"/>
             </a>
         </div>
-        <div style="display: flex; flex-direction: column;">
-            <nav class="navbar navbar-expand-lg navbar-light float-end" id="narbar-container">
+        <div class="header-right">
+            <div class="navbar navbar-expand-lg navbar-dark" id="narbar-container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="d-flex flex-wrap w-100 justify-contentt-end"  id="navigation-search-bar">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/goals">Ziele</a>
+                <div class="d-flex w-100 justify-contentt-end" id="header-navigation-links">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="container nav-link" href="/goals"  target="">Ziele</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="https://www.enzkreis.de/Landkreis-Politik/Leitbild-Agenda-2030/">Über uns</a>
+    <a class="container nav-link" href="https://www.enzkreis.de/Landkreis-Politik/Leitbild-Agenda-2030/"  target="_blank">Über uns</a>
 </li></ul>
     
-                    </div>
                 </div>
-            </nav>
+            </div>
 
-            <div>
-                <a class="navbar-brand" href="https://www.enzkreis.de/" id="enz-logo">
+            <div style="height: 5rem;">
+                <a class="navbar-brand" href="https://www.enzkreis.de/" target="_blank" id="enz-logo">
                     <img src="/assets/img/Enzkreis_logo.png"
                     onmouseover="this.src='/assets/img/Enzkreis_logo.png'"
                     onmouseout="this.src='/assets/img/Enzkreis_logo.png'"/>
@@ -197,8 +195,18 @@ layout-goal
 
     </div>
 </header>
-<div id="color-bar-background"  style="position: relative; top:0px;"> </div>
+<div id="color-bar-background"> </div>
 
+<div class="header-navigation-dropdown">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="container nav-link" href="/goals"  target="">Ziele</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="https://www.enzkreis.de/Landkreis-Politik/Leitbild-Agenda-2030/"  target="_blank">Über uns</a>
+</li></ul>
+    
+    </div>
+</div>
 
 <!--
 <div id="top" tabindex=-1></div>
@@ -934,21 +942,21 @@ layout-goal
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
                                     
-                                        <a href="https://www.enzkreis.de/Landkreis-Politik/Leitbild-Agenda-2030/" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Kontakt</a>
-                                    
+                                        <a href="https://www.enzkreis.de/Landkreis-Politik/Leitbild-Agenda-2030/" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Kontakt</a>
+                                        
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
                                     
-                                        <a href="https://www.enzkreis.de/Sonstiges/Impressum/" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Impressum</a>
-                                    
+                                        <a href="https://www.enzkreis.de/Sonstiges/Impressum/" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Impressum</a>
+                                        
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
-                                    <a href="/guidance" target="_blank"  style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
+                                    <a href="/guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
                                     
                                     </li>
                             
                         
-                        </ul>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -993,12 +1001,12 @@ layout-goal
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230310173638'></script>
+<script src='/assets/js/sdg.js?v=20230313132003'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230310173638"></script><script>
+    <script src="/assets/js/custom.js?v=20230313132003"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

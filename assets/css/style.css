@@ -2607,6 +2607,13 @@ body.contrast-high #search-bar-on-page button:hover {
 body.contrast-high.layout-search form input, body.contrast-high.layout-search form label {
   color: black; }
 
+h1 {
+  font-size: 2.35vw;
+  text-align: start; }
+  @media screen and (max-width: 992px) {
+    h1 {
+      font-size: 3.75vw; } }
+
 #main-content .goal-tiles {
   padding-top: 1rem; }
   #main-content .goal-tiles .goal-tile > a:focus {
@@ -2624,13 +2631,14 @@ body {
 /* header color bar --> hide by pushing over page-top boundary */
 #color-bar-background {
   background: white url("../img/sdgbg.png") top left repeat-x;
+  position: relative;
   top: 0px;
   height: 9px; }
 
 header {
   display: block;
-  padding-bottom: 1.8rem;
   top: 0px;
+  max-height: fit-content;
   z-index: 3;
   background-color: #248096;
   background-image: url("../img/bg_site-header.png");
@@ -2640,8 +2648,13 @@ header {
 #home {
   display: inline-block;
   position: relative;
-  max-width: 33%;
+  padding-top: 0.7rem;
+  padding-bottom: 1rem;
+  max-width: 17rem;
   text-decoration: none; }
+  @media screen and (max-width: 768px) {
+    #home {
+      max-width: 15rem; } }
 
 #enz-logo {
   display: inline-block;
@@ -2649,6 +2662,11 @@ header {
   position: relative;
   top: 10%;
   right: 2%; }
+  @media screen and (max-width: 992px) {
+    #enz-logo {
+      top: 25%;
+      width: 80%;
+      right: -10%; } }
 
 /*  ab hier von open-sdg*/
 .navbar-brand {
@@ -2661,12 +2679,18 @@ header {
     background-color: transparent !important;
     outline: 7px solid transparent !important; }
 
-.navbar {
-  padding-top: .5rem;
-  padding-bottom: .5rem; }
+@media screen and (min-width: 992px) {
+  .header-right {
+    display: flex;
+    flex-direction: column; } }
+@media screen and (max-width: 992px) {
+  .header-right {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: auto; } }
 
-.navbar.navbar-nav.nav-item.nav-link {
-  font-size: 15px; }
+.navbar {
+  justify-content: flex-end; }
 
 .navbar .navbar-nav > .nav-item > .nav-link {
   color: white; }
@@ -2674,6 +2698,35 @@ header {
 .navbar .navbar-nav > .nav-item > .nav-link:hover {
   border-bottom: 3px solid white; }
 
+@media screen and (max-width: 992px) {
+  #header-navigation-links {
+    display: none !important; } }
+@media screen and (min-width: 992px) {
+  .header-navigation-dropdown {
+    display: none; } }
+@media screen and (max-width: 992px) {
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='	rgb(255,255,255)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    font-size: 0.8rem; }
+  .navbar .navbar-toggler {
+    border-color: white;
+    background-color: #248096;
+    margin-top: 0px; }
+  .navbar .navbar-toggler[aria-expanded="true"] {
+    background-color: #7d7900; }
+  .navbar .navbar-toggler:hover,
+  .navbar .navbar-toggler:focus {
+    border-color: white;
+    background-color: #7d7900;
+    box-shadow: 0px 0px 0px 0px transparent !important; }
+
+  .header-navigation-dropdown .nav-item {
+    background-color: #226c7e; }
+  .header-navigation-dropdown .nav-item:hover {
+    background-color: #7d7900; }
+  .header-navigation-dropdown .navbar-nav .nav-link {
+    color: white;
+    padding-left: 1rem; } }
 /* search field*/
 #search-btn {
   background-color: #eeeeee !important;
@@ -2704,11 +2757,14 @@ header {
 .lead-copy {
   padding-top: 2rem; }
 
-p > img {
-  float: right;
-  width: 45%;
-  padding-left: 3rem;
+.col-lg-5 {
+  width: auto;
+  height: max-content;
   padding-bottom: 2rem; }
+  @media screen and (min-width: 992px) {
+    .col-lg-5 {
+      padding-left: 3rem;
+      width: 41%; } }
 
 .frontpage-goals-grid .frontpage-goals-grid-title {
   margin-top: 5rem;

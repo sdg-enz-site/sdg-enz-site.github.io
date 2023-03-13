@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230310173638">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230313132003">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -170,32 +170,30 @@ layout-frontpage
     <div class="container d-flex justify-content-between">
 
         <div>
-            <a class="navbar-brand" href="/" id="home" style="position:relative; top:0.7rem; bottom: 0.5rem;">
+            <a class="navbar-brand" href="/" id="home">
                 <img src="/assets/img/Mission_logo.png"
                 onmouseover="this.src='/assets/img/Mission_logo.png'"
                 onmouseout="this.src='/assets/img/Mission_logo.png'"/>
             </a>
         </div>
-        <div style="display: flex; flex-direction: column;">
-            <nav class="navbar navbar-expand-lg navbar-light float-end" id="narbar-container">
+        <div class="header-right">
+            <div class="navbar navbar-expand-lg navbar-dark" id="narbar-container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="d-flex flex-wrap w-100 justify-contentt-end"  id="navigation-search-bar">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav" id="menu"><li class="nav-item ">
-    <a class="nav-link" href="/goals">Ziele</a>
+                <div class="d-flex w-100 justify-contentt-end" id="header-navigation-links">
+                    <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="container nav-link" href="/goals"  target="">Ziele</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="https://www.enzkreis.de/Landkreis-Politik/Leitbild-Agenda-2030/">Über uns</a>
+    <a class="container nav-link" href="https://www.enzkreis.de/Landkreis-Politik/Leitbild-Agenda-2030/"  target="_blank">Über uns</a>
 </li></ul>
     
-                    </div>
                 </div>
-            </nav>
+            </div>
 
-            <div>
-                <a class="navbar-brand" href="https://www.enzkreis.de/" id="enz-logo">
+            <div style="height: 5rem;">
+                <a class="navbar-brand" href="https://www.enzkreis.de/" target="_blank" id="enz-logo">
                     <img src="/assets/img/Enzkreis_logo.png"
                     onmouseover="this.src='/assets/img/Enzkreis_logo.png'"
                     onmouseout="this.src='/assets/img/Enzkreis_logo.png'"/>
@@ -205,8 +203,18 @@ layout-frontpage
 
     </div>
 </header>
-<div id="color-bar-background"  style="position: relative; top:0px;"> </div>
+<div id="color-bar-background"> </div>
 
+<div class="header-navigation-dropdown">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="container nav-link" href="/goals"  target="">Ziele</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="https://www.enzkreis.de/Landkreis-Politik/Leitbild-Agenda-2030/"  target="_blank">Über uns</a>
+</li></ul>
+    
+    </div>
+</div>
 
 <!--
 <div id="top" tabindex=-1></div>
@@ -237,9 +245,13 @@ layout-frontpage
         <h1 style="font-weight: 700; color: #444444">Monitoring der Nachhaltigkeitsstrategie<br>
             für den Enzkreis</h1>
         <div class="lead-copy">
-            <p ><img src="/assets/img/Bastian Rosenau 3.jpg">
-            Der Enzkreis hat sich per Beschluss des Kreistags zu den Zielen der Agenda 2030 der Vereinten Nationen und damit zum Grundsatz der Nachhaltigkeit bekannt. Das im Sinne der Agenda 2030 überarbeitete Leitbild hat der Kreistag im Dezember 2018 beschlossen. Damit sind die 17 Agenda-Ziele in der normativen Zielsetzung von Kreistag und Verwaltung berücksichtigt. Ausgehend vom Leitbild wurde die Nachhaltigkeitsstrategie erarbeitet und dem Kreistag am 4. April 2022 vorgelegt. Sie füllt das Leitbild des Enzkreises mit Leben, unterlegt die 17 Agenda-Ziele mit konkreten Maßnahmen und macht die nachhaltige Entwicklung über SDG-Indikatoren mess- und steuerbar.
-            <br><br>
+            <div class="row g-0 align-items-start">
+                <p class="col-lg-7 col-sm-12">
+                Der Enzkreis hat sich per Beschluss des Kreistags zu den Zielen der Agenda 2030 der Vereinten Nationen und damit zum Grundsatz der Nachhaltigkeit bekannt. Das im Sinne der Agenda 2030 überarbeitete Leitbild hat der Kreistag im Dezember 2018 beschlossen. Damit sind die 17 Agenda-Ziele in der normativen Zielsetzung von Kreistag und Verwaltung berücksichtigt. Ausgehend vom Leitbild wurde die Nachhaltigkeitsstrategie erarbeitet und dem Kreistag am 4. April 2022 vorgelegt. Sie füllt das Leitbild des Enzkreises mit Leben, unterlegt die 17 Agenda-Ziele mit konkreten Maßnahmen und macht die nachhaltige Entwicklung über SDG-Indikatoren mess- und steuerbar.
+                </p>
+                <img class="img-fluid col-lg-5 col-sm-12" src="/assets/img/Bastian Rosenau 3.jpg">
+            </div>
+            <p>
             Mit den nun vorliegenden Indikatoren messen wir die Erreichung der in der Nachhaltigkeitsstrategie formulierten Ziele für eine nachhaltige Kreisentwicklung mit konkreten Zahlen. Diese zeigen, wo wir bereits gut aufgestellt sind und in welchen Sektoren nachgesteuert werden muss. Sie sind ebenso ein Steuerungsinstrument zur Kreisentwicklung für den Kreistag des Enzkreises und für die Verwaltungsspitze im Landratsamt.
             <br><br>
             In den meisten Bereichen sind wir auf einem guten Weg, auch dies zeigen die vorliegenden Indikatoren für den Enzkreis. Die Zahlen bilden den Trend der vergangenen Jahre ab. Auf dieser Grundlage können wir uns landes- und deutschlandweit mit anderen Kommunen vergleichen.
@@ -414,7 +426,7 @@ layout-frontpage
             <div class="col">
                 <div class="card border">
                     <a href="" target="_blank" style="text-decoration: none;">
-                        <img class="card-img-top"src="/assets/img/3397_5_1_m.jpg" alt="include.card.title">
+                        <img class="card-img-top"src="/assets/img/thumbnail_podcast.png" alt="include.card.title">
                         <div class="cont">
                             <h4 style="font-weight: 600; font-size: 12vm; line-height: 1.5;">Deutsches Jugendinstitut e.V (DJI) - Podcast "Transfer für die Ohren" (Interview mit Dr. Jannis Hoek)</h4>
                         </div>
@@ -505,21 +517,21 @@ layout-frontpage
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
                                     
-                                        <a href="https://www.enzkreis.de/Landkreis-Politik/Leitbild-Agenda-2030/" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Kontakt</a>
-                                    
+                                        <a href="https://www.enzkreis.de/Landkreis-Politik/Leitbild-Agenda-2030/" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Kontakt</a>
+                                        
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
                                     
-                                        <a href="https://www.enzkreis.de/Sonstiges/Impressum/" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Impressum</a>
-                                    
+                                        <a href="https://www.enzkreis.de/Sonstiges/Impressum/" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Impressum</a>
+                                        
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
-                                    <a href="/guidance" target="_blank"  style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
+                                    <a href="/guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
                                     
                                     </li>
                             
                         
-                        </ul>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -564,12 +576,12 @@ layout-frontpage
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230310173638'></script>
+<script src='/assets/js/sdg.js?v=20230313132003'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230310173638"></script><script>
+    <script src="/assets/js/custom.js?v=20230313132003"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
