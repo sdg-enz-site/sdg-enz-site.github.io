@@ -18,7 +18,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://sdg-enz-site.github.io/sdg-enz-data/de',
+  remoteDataBaseUrl: 'http://agenda2030.enzkreis.de/sdg-enz-data/de',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -134,7 +134,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230313132003">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230316212455">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -222,11 +222,11 @@ layout-frontpage
  -->
 
 <div class="container">
-    <div style="padding-top: 1rem; padding-left: 70%">
-        <form class="align-self-lg-end" id="search" action="/search/">
+    <div class="d-flex justify-content-end" style="padding-top: 1rem; padding-bottom: 20px; ">
+        <form class="search-field" id="search" action="/search/">
     <div class="input-group">
         <label class="visually-hidden" for="indicator_search">Suche</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Suche">
+        <input class="form-control" type="search" placeholder="Indikator suchen" name="q" id="indicator_search" title="Suche">
         <span class="input-group-append">
             <button class="btn btn-outline-secondary ms-n5" aria-label="" id="search-btn" type="submit">
                 <i class="fa fa-search"></i>
@@ -235,6 +235,38 @@ layout-frontpage
     </div>
 </form>
 
+<div class="align-items-center" id="navbar-search-md" style="z-index: 10;">
+    <button class="btn hide-btn" id="search-btn-collapse" onclick="showSearchField()" type="button" data-bs-toggle="collapse" data-bs-target="#search-field-input" aria-controls="search-field" aria-expanded="false" aria-label="">
+        <i class="fa fa-search"></i>
+    </button>
+    <div class="collapse" id="search-field-input">
+        <form class="search-field float-start" id="search-md" action="/search/">
+            <div class="input-group">
+                <label class="visually-hidden" for="indicator_search">Suche</label>
+                <input class="form-control" type="search" placeholder="Indikator suchen" name="q" id="indicator_search" title="Suche">
+            </div>
+        </form>
+        <span class="float-end" >
+            <button id="search-field-close" onclick="hideSearchField()">
+                <i class="fa fa-close" style="padding: 0.45em"></i>
+            </button>
+        </span>
+    </div>
+</div>
+
+
+<script>
+    function hideSearchField() {
+        var x = document.getElementById( "search-field-input" )
+    }
+    function hideSearchField() {
+        var x = document.getElementById( "search-field-input" )
+        var y = document.getElementById( "search-btn-collapse" )
+
+        x.classList.remove("show");
+        y.setAttribute("aria-expanded", "false");
+    }
+</script>
     </div>
 </div>
 
@@ -242,8 +274,7 @@ layout-frontpage
 
     
     <div class="site-intro">
-        <h1 style="font-weight: 700; color: #444444">Monitoring der Nachhaltigkeitsstrategie<br>
-            für den Enzkreis</h1>
+        <h1 style="font-weight: 700; color: #444444">Monitoring der Nachhaltigkeitsstrategie<br>für den Enzkreis</h1>
         <div class="lead-copy">
             <div class="row g-0 align-items-start">
                 <p class="col-lg-7 col-sm-12">
@@ -259,8 +290,8 @@ layout-frontpage
             Ob Gesundheit und soziale Gerechtigkeit, ob Biodiversität und eine schadstofffreie Umwelt, ob Energie- und Verkehrswende, ob erfolgreiche Unternehmen oder eine nachhaltige Agrarwirtschaft und Nahrungsmittelproduktion: die nachhaltige Entwicklung des Enzkreises ist eine wichtige Zukunftsaufgabe, der wir uns mit diesen Indikatoren stellen. Lassen Sie uns gemeinsam an einer nachhaltigen, enkeltauglichen Zukunft arbeiten.
             <br><br>
             Ihr<br> </p>
-            <img src="/assets/img/major_signature.png" style="width: 30%">
-            <p>Landrat</p>
+            <img src="/assets/img/major_signature.png" id="landrat-sign">
+            <p>Bastian Rosenau,<br>Landrat</p>
         </div>
     </div>
     
@@ -386,7 +417,7 @@ layout-frontpage
     
     
     <!-- cards -->
-    <div class="row frontpage-card">
+    <div class="row g-0 frontpage-card">
         <!-- cards for publication etc-->
 
 <h2 style="font-size: 32px; font-weight: 700; color: #444444; padding-top: 5rem;">Veröffentlichungen</h2>
@@ -425,10 +456,10 @@ layout-frontpage
         <div class="carousel-item card-gap">
             <div class="col">
                 <div class="card border">
-                    <a href="" target="_blank" style="text-decoration: none;">
-                        <img class="card-img-top"src="/assets/img/thumbnail_podcast.png" alt="include.card.title">
+                    <a href="https://open.spotify.com/episode/4hOCv6rGi0TDbJE5lUSOyW?si=6d16592196ce4000" target="_blank" style="text-decoration: none;">
+                        <img class="card-img-top"src="/assets/img/thumbnail_podcast.jpg" alt="include.card.title">
                         <div class="cont">
-                            <h4 style="font-weight: 600; font-size: 12vm; line-height: 1.5;">Deutsches Jugendinstitut e.V (DJI) - Podcast "Transfer für die Ohren" (Interview mit Dr. Jannis Hoek)</h4>
+                            <h4 style="font-weight: 600; font-size: 12vm; line-height: 1.5;">Prodcast "Transfer für die Ohren", Episode 1 (Transferagentur Bayern, Regionalbüro Süd):<br>Interview mit Dr. Jannis Hoek</h4>
                         </div>
                     </a>
                 </div>
@@ -469,7 +500,7 @@ layout-frontpage
 
 <footer class="wide-background " style="width: 100%; margin-top: 6rem; padding-top: 5rem;">
     <div class="container">
-        <div class="row" style="padding: 0px;">
+        <div class="row g-0" style="padding: 0px;">
             <div class="col-xs-12">
                 <div id="kooperation" >
                     <p>Unsere Projektpartner</p>
@@ -478,34 +509,34 @@ layout-frontpage
         </div>
     </div>
     <div class="container">
-        <div class="row flexdirection justify-content-around">
+        <div class="row g-0 flexdirection justify-content-around">
             <div class="col-xs-3" id="footer-binder">
-                <div id="bilder3" style="background-color:white; padding-top: 1.5rem;">
-                    <!-- <h5 style="margin-top: 3%; margin-bottom: 2%;">Gefördert durch</h5> -->
+                <div id="bilder" style="background-color:white;">
+                    <h5 style="margin-top: 3%; margin-bottom: 2%;">In Koorperation mit</h5>
                     <a href="https://www.engagement-global.de/" id="footer-binder-href" target="_blank" ><img src="/assets/img/logo_eg.png" alt="engagement_global1" id="footer-binder-image" class="img-responsive"></a>
                 </div>
             </div>
             <div class="col-xs-3" id="footer-binder">
-                <div id="bilder5" style="background-color:white;">
+                <div id="bilder" style="background-color:white;">
                     <h5 style="margin-top: 3%; margin-bottom: 2%;">mit ihrer</h5>
                     <a href="https://skew.engagement-global.de/" id="footer-binder-href" target="_blank" ><img src="/assets/img/logo_skew_de.png" alt="engagement_global2" id="footer-binder-image" class="img-responsive"></a>
                 </div>
             </div>
             <div class="col-xs-3" id="footer-binder">
-                <div id="bilder2" style="background-color:white;">
-                    <h5 style="margin-top: 2.5%; margin-bottom: 0%">im Auftrag des</h5>
+                <div id="bilder" style="background-color:white;">
+                    <h5 style="margin-top: 2.5%; margin-bottom: 0%">mit Mitteln des</h5>
                     <a href="https://www.bmz.de/de" id="footer-binder-href" target="_blank" ><img src="/assets/img/logo_BMZ.png" alt="bmz" id="footer-binder-image" class="img-responsive"></a>
                 </div>
             </div>
             <div class="col-xs-3" id="footer-binder">
-                <div id="bilder4" style="background-color:white; padding-top: 1.4rem;">
+                <div id="bilder" style="background-color:white; padding-top: 1.4rem;">
                     <a href="https://www.htw-berlin.de" id="footer-binder-href" target="_blank"><img src="/assets/img/logo_htw.png" alt="htw_berlin" id="footer-binder-image" class="img-responsive"></a>
                 </div>
             </div>
          </div>
     </div>
     <div class="container">
-        <div class="row" style="padding: 0px;text-align: center;">
+        <div class="row g-0" style="padding: 0px;text-align: center;">
             <div class="col-xs-12">
                 <div id="footerLinks" style="background-color:#248096;color:white;padding: 10px;margin-bottom: 1px;">
                     <ul style="text-align: center;">
@@ -537,7 +568,7 @@ layout-frontpage
         </div>
     </div>
     <div class="container">
-        <div class="row" style="padding: 0px;text-align:center">
+        <div class="row g-0" style="padding: 0px;text-align:center">
             <div class="col-xs-12">
                 <div id="footerende" style="background-color:#248096;color:white;padding: 10px;margin-bottom:1px; text-align: center;">
                     <ul style="text-align: center;">
@@ -576,12 +607,12 @@ layout-frontpage
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230313132003'></script>
+<script src='/assets/js/sdg.js?v=20230316212455'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230313132003"></script><script>
+    <script src="/assets/js/custom.js?v=20230316212455"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
