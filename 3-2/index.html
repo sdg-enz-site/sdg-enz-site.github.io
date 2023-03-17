@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230316212455">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230317125359">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -367,16 +367,6 @@ layout-indicator
 
     
 
-<div class="row" id="page-content">
-  <div class="col-xs-12">
-    <p>Eine flächendeckende Krankenhausversorgung ist ein wesentliches Element der Daseinsvorsorge. Um mit den begrenzten finanziellen Mitteln eine hohe Qualität der medizinischen Versorgung zu garantieren, muss nach strengen wirtschaftlichen Parametern gehandelt und behandelt werden.
-11
-In Verbindung mit unterschiedlichen demographischen und wirtschaftlichen regionalen Parametern ist die wirtschaftliche Bereitstellung von Krankenhauskapazitäten oft nur bedingt möglich und schlägt sich dementsprechend in einem knappen Angebot nieder. Die wohnortnahe Grundversorgung mit Krankenhäusern unterliegt aufgrund oft vorgenommener Rationalisierungsmaßnahmen einem zunehmend ausgeprägten Stadt-Land-Gefälle.
-Eine adäquate Krankenhausversorgung zu gewährleisten, entspricht dem Prinzip der Generationengerechtigkeit und dem der gleichwertigen Lebensverhältnisse.</p>
-
-  </div>
-</div>
-
 
     
 
@@ -403,7 +393,7 @@ Eine adäquate Krankenhausversorgung zu gewährleisten, entspricht dem Prinzip d
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Beschäftigungsquote&quot;,&quot;Beschäftigungsquote 55 - 64-Jährige&quot;,&quot;&quot;]},&quot;title&quot;:&quot;gruppe.beschaeftigt&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -752,12 +742,19 @@ data-event-label="Change to Sources tab"
       
       
       
+        
+          
+          
+          
+          
+        
+      
       
       <tr>
         <th scope="row">Definitionen </th>
         <td>
           
-            <p>Anzahl der aufgestellten Betten in Krankenhäusern je 100.000 EinwohnerInnen</p>
+            <p><span class="empty-metadata-placeholder"></span></p>
 
           
         </td>
@@ -823,12 +820,19 @@ data-event-label="Change to Sources tab"
       
       
       
+        
+          
+          
+          
+          
+        
+      
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p>2006</p>
+            <p><span class="empty-metadata-placeholder"></span></p>
 
           
         </td>
@@ -844,7 +848,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Bundesinstitut für Bau-, Stadt- und Raumforschung, Statistisches Landesamt BW</p>
+            <p>Bertelsmann Stiftung / Wegweiser Kommune</p>
 
           
         </td>
@@ -1244,12 +1248,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230316212455'></script>
+<script src='/assets/js/sdg.js?v=20230317125359'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230316212455"></script><script>
+    <script src="/assets/js/custom.js?v=20230317125359"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

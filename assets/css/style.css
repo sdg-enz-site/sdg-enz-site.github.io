@@ -2767,7 +2767,7 @@ header {
   color: #444444 !important;
   border-color: #ced4da !important;
   padding-top: 0.7rem;
-  padding-bottom: 0.7em; }
+  padding-bottom: 0.7rem; }
 #search button:focus, #search-bar-on-page button:focus {
   color: white !important;
   border-color: #444444;
@@ -2783,12 +2783,11 @@ header {
     #search {
       display: none; } }
 
-#search-bar-on-page .input-group button {
+#search-bar-on-page button {
   right: 0px;
   height: auto;
-  padding-top: 0.4em;
-  padding-bottom: 0.4em; }
-#search-bar-on-page .input-group input {
+  font-size: initial; }
+#search-bar-on-page input {
   height: auto; }
 
 @media screen and (min-width: 992px) {

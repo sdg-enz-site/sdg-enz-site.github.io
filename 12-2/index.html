@@ -107,7 +107,7 @@ var translations = {
         
         Indikator 12.2 -
         
-        Abfallmenge - Indikatoren für die nachhaltigen Entwicklungsziele
+        Abfallaufkommen - Indikatoren für die nachhaltigen Entwicklungsziele
     </title>
 
 
@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230316212455">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230317125359">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -249,7 +249,7 @@ layout-indicator
     
     <div class="previous-next-links row g-0 d-flex align-items-center justify-content-center">
       <div class="col-2 text-center">
-        <a href="/12-1-b" class="btn btn-primary goal-12 btn-left goal-banner" role="button">
+        <a href="/12-1" class="btn btn-primary goal-12 btn-left goal-banner" role="button">
           <i class="fa fa-chevron-left" aria-hidden="true"></i> <span id="previous-link" class="hidden-sm hidden-xs"></span>
         </a>
       </div>
@@ -354,7 +354,7 @@ layout-indicator
             <div class="goal-titles">
                 
                 <h2 class="indicator-title-by-indicator goal-12">Indikator 12.2</h2>
-                <h2 class="indicator-title-by-indicator goal-12" style="font-weight:600">Abfallmenge</h2>
+                <h2 class="indicator-title-by-indicator goal-12" style="font-weight:600">Abfallaufkommen</h2>
                 
             </div>
         </div>
@@ -367,16 +367,6 @@ layout-indicator
 
     
 
-<div class="row" id="page-content">
-  <div class="col-xs-12">
-    <p>Die Vermeidung bzw. Verminderung von Abfall und die Wiederverwertung von Wertstoffen ist ein Thema mit langer Tradition. Einerseits geht es dabei um das kommunale Abfallaufkommen insgesamt. Darüber hinaus ist die Nutzung der Wertstoffe von Interesse. Der Indikator Abfallmenge beschränkt sich auf die häuslichen Abfälle und lässt betriebliche Abfälle außen vor.
-Für die Berechnung des kommunalen Abfallaufkommens [kg/EW] werden die gesammelten Mengen an Haus- und Sperrabfall, Grünschnitt und Bioabfall sowie alle weiteren getrennt erfassten Wertstofffraktionen (u.a. Altpapier, Altglas, Leichtverpackungen, Elektroschrott etc.) erhoben. In der Auswertung nicht berücksichtigt sind die Mengen der separat erfassten Gewerbe- und Baustellenabfälle, die zwar dem öffentlichen Entsorgungsträger überlassen werden können, die aber grundsätzlich
-42
-keiner unmittelbaren, kommunalen Überlassungspflicht unterliegen. Sie sind daher nicht unmittelbar zu den häuslichen Abfällen zu zählen und stellen insofern kein belastbares Maß für die unter kommunaler Regie erfasste Pro-Kopf-Abfallmenge dar. Dagegen werden die durch die kommunale Schadstoffsammlung erfassten Problemabfälle den Rest- und Sperrabfällen zugerechnet.</p>
-
-  </div>
-</div>
-
 
     
 
@@ -387,7 +377,7 @@ keiner unmittelbaren, kommunalen Überlassungspflicht unterliegen. Sie sind dahe
   data-indicatorid='indicator_12-2'
   data-id="12-2"
   data-country="Land BW"
-  data-charttitle="Abfallmenge"
+  data-charttitle="Abfallaufkommen"
   data-charttitles="null"
   data-measurementunit="Prozent"
   data-xaxislabel=""
@@ -403,7 +393,7 @@ keiner unmittelbaren, kommunalen Überlassungspflicht unterliegen. Sie sind dahe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Beschäftigungsquote&quot;,&quot;Beschäftigungsquote 55 - 64-Jährige&quot;,&quot;&quot;]},&quot;title&quot;:&quot;gruppe.beschaeftigt&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -525,7 +515,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Abfallmenge</h4>
+          <h4 id="chart-heading" class="chart-title">Abfallaufkommen</h4>
           <div id="chart" class="plot-container">
             <canvas
     role="img"
@@ -741,7 +731,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Indikatorenbezeichnung </th>
         <td>
           
-            <p>Abfallmenge</p>
+            <p>Abfallaufkommen</p>
 
           
         </td>
@@ -752,12 +742,19 @@ data-event-label="Change to Sources tab"
       
       
       
+        
+          
+          
+          
+          
+        
+      
       
       <tr>
         <th scope="row">Definitionen </th>
         <td>
           
-            <p>Der Indikator setzt sich aus der pro Jahr anfallenden Menge an Abfällen in Bezug auf die in der Gebietskörperschaft lebenden EinwohnerInnen zusammen <br /> Abfallmenge – gesamt = (Gesamtmenge der Abfälle in kg) / (Anzahl EinwohnerInnen) <br /> Abfallmenge – Wertstoffanteil = (Menge von Wertstoffen [kg]) / (Gesamtmenge der Abfälle [kg]) * 100 <br /> Abfallmenge – Bioabfallanteil = (Menge an Bioabfällen [kg]) / (Gesamtmenge der Abfälle [kg]) * 100 <br /> Abfallmenge –Grünschnittanteil = (Menge an Grünschnitt [kg]) / (Gesamtmenge der Abfälle [kg]) * 100 <br /> Abfallmenge –Restmüllanteil = (Menge an Restmüll [kg]) / (Gesamtmenge der Abfälle [kg]) * 100</p>
+            <p><span class="empty-metadata-placeholder"></span></p>
 
           
         </td>
@@ -800,12 +797,19 @@ data-event-label="Change to Sources tab"
       
       
       
+        
+          
+          
+          
+          
+        
+      
       
       <tr>
         <th scope="row">Periodizität </th>
         <td>
           
-            <p>Jahresintervalle</p>
+            <p><span class="empty-metadata-placeholder"></span></p>
 
           
         </td>
@@ -844,7 +848,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Statistisches Landesamt BW</p>
+            <p>Bertelsmann Stiftung / Wegweiser Kommune</p>
 
           
         </td>
@@ -1244,12 +1248,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230316212455'></script>
+<script src='/assets/js/sdg.js?v=20230317125359'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230316212455"></script><script>
+    <script src="/assets/js/custom.js?v=20230317125359"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
