@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230317134512">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230319174914">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -367,6 +367,18 @@ layout-indicator
 
     
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>Die Armutslage von Kindern und Jugendlichen steht immer in Abhängigkeit zur Armutslage von Erziehungsberechtigten. Besonders betroffen sind Kinder Alleinerziehender sowie aus Familien mit ausländischer Herkunft oder aus Familien mit vielen Kindern. Arm zu sein bedeutet nicht nur, dass die Mittel für materielle Mindeststandards und das physische Überleben fehlen: Armut ist zugleich auch mit Diskriminierung und ungleichen Bildungs- und Teilhabechancen verbunden. <br />
+Die Armut in der Gruppe der Minderjährigen (Kinderarmut, Jugendarmut) wird berechnet als Personen der jeweiligen Altersgruppe, die entweder selbst Leistungsbezieher von Grundsicherung oder Sozialhilfe nach SGB II/SGB XII sind (nicht erwerbsfähige und erwerbsfähige Leistungsbeziehende) oder die in einem Haushalt (Bedarfsgemeinschaft) leben, der Anspruch auf Leistungen nach SGB II/SGB XII hat bzw. ohne Ausschlussgrund hätte (nicht Leistungsberechtigte), relativ zu allen Personen der Altersgruppe. <br />
+<br />
+<strong>ENTWICKLUNG</strong> <br />
+<br />
+Der Anteil von Kindern (unter 15 Jahren) und Jugendlichen (unter 17 Jahren) im Enzkreis, die in Armut leben, liegt jeweils unter dem Landesdurchschnitt. Der Zuwachs der Leistungsbezüge der vergangenen Jahre und im Schwerpunkt seit 2015 ist auch hier insbesondere auf die Zuwanderung Geflüchteter zurückzuführen. Menschen mit Migrationshintergrund haben häufiger geringere schulische und berufliche Qualifikationen. Zudem werden Abschlüsse häufig nicht anerkannt und es bestehen Sprachbarrieren, was den Zugang zum Arbeitsmarkt erschwert. Zeitlich begrenzte Aufenthaltsdauern sowie die häufigere Ausübung von befristeten und/oder schlechter bezahlten Tätigkeiten wirken sich auf die Armutsquote aus. Natürlich sind nicht alle Personen mit Migrationshintergrund gleichermaßen von diesen Faktoren betroffen. Der Zuwachs im Jahr 2020 ist erneut auf die Coronapandemie zurückzuführen.</p>
+
+  </div>
+</div>
+
 
     
 
@@ -386,7 +398,7 @@ layout-indicator
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Enzkreis&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Land BW&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Enzkreis&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Land BW&quot;},{&quot;field&quot;:&quot;grupp.armut&quot;,&quot;value&quot;:&quot;Kinderarmut&quot;},{&quot;field&quot;:&quot;grupp.armut&quot;,&quot;value&quot;:&quot;Jugendarmut&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -797,19 +809,12 @@ data-event-label="Change to Sources tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Periodizität </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>Jährlich</p>
 
           
         </td>
@@ -819,20 +824,13 @@ data-event-label="Change to Sources tab"
   
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2011</p>
 
           
         </td>
@@ -843,19 +841,12 @@ data-event-label="Change to Sources tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p><a href="https://www.inkar.de/">Bundesinstitut für Bau-, Stadt- und Raumforschung (BBSR)</a></p>
 
           
         </td>
@@ -1255,12 +1246,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230317134512'></script>
+<script src='/assets/js/sdg.js?v=20230319174914'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230317134512"></script><script>
+    <script src="/assets/js/custom.js?v=20230319174914"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

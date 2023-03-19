@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230317134512">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230319174914">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -367,6 +367,18 @@ layout-indicator
 
     
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>Bei der Sozialleistung nach dem 4. Kapitel SGB XII handelt es sich um eine bedürftigkeitsabhängige Leistung, die älteren Menschen ab Vollendung des 65. Lebensjahres zur Sicherung ihres Lebensunterhalts (Grundsicherung im Alter) dienen soll. Praktisch steht diese Leistung auch Personen zu, die zwar die Altersgrenze noch nicht erreicht haben, aber dauerhaft voll erwerbsgemindert sind. Insofern gibt es auch im Bereich der Grundsicherung nach SGB XII potentiell jüngere Leistungsbezieher.
+Ein Auslöser für Armut im Alter ist häufig das Entstehen eines Pflegebedarfs. Gerade bei stationärer Pflege können auch Menschen Sozialhilfeleistungen in Form der Hilfe zur Pflege in Anspruch nehmen, die verhältnismäßig hohe Rentenbeträge beziehen und gegebenenfalls ein gewisses Vermögen erarbeitet hatten, welches jedoch nach einiger Zeit im Pflegeheim aufgebraucht sein kann. <br />
+<br />
+<strong>ENTWICKLUNG</strong> <br />
+<br />
+Im Enzkreis ist der Anteil der Leistungsbeziehenden für Grundsicherung im Alter verhältnismäßig stabil und liegt im Zeitverlauf unter dem Landesdurchschnitt bei etwa 1 %. Datenquelle: Bertelsmann</p>
+
+  </div>
+</div>
+
 
     
 
@@ -386,14 +398,14 @@ layout-indicator
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Enzkreis&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Land BW&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Enzkreis&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Land BW&quot;},{&quot;field&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;value&quot;:&quot;Grundsicherung im Alter (SGB XII-Quote)&quot;},{&quot;field&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;value&quot;:&quot;Grundsicherung im Alter (SGB XII-Quote)&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Beschäftigungsquote&quot;,&quot;Beschäftigungsquote 55 - 64-Jährige&quot;,&quot;&quot;]},&quot;title&quot;:&quot;gruppe.beschaeftigt&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Grundsicherung im Alter (SGB XII-Quote)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;gruppe.beschaeftigt&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -797,19 +809,12 @@ data-event-label="Change to Sources tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Periodizität </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>Jährlich</p>
 
           
         </td>
@@ -819,20 +824,13 @@ data-event-label="Change to Sources tab"
   
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2011</p>
 
           
         </td>
@@ -843,19 +841,12 @@ data-event-label="Change to Sources tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p><a href="https://www.inkar.de/">Bundesinstitut für Bau-, Stadt- und Raumforschung (BBSR)</a></p>
 
           
         </td>
@@ -1255,12 +1246,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230317134512'></script>
+<script src='/assets/js/sdg.js?v=20230319174914'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230317134512"></script><script>
+    <script src="/assets/js/custom.js?v=20230319174914"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

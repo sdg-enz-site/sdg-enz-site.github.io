@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230317134512">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230319174914">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -367,6 +367,20 @@ layout-indicator
 
     
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>Eine ambulante Versorgung hat den Vorteil, dass die betroffene Person nicht in einer stationären Pflegeeinrichtung, sondern in der Regel zu Hause, bei Familienangehörigen, in betreuten Wohnformen oder in einer Pflegewohngemeinschaft lebt, wobei die notwendige pflegerische Versorgung durch ambulante Dienste sichergestellt wird.
+Die Pflegelandschaft umfasst kirchliche Angebote sowie Angebote der freien Wohlfahrtspflege und privatwirtschaftlich geführte ambulante Pflegedienste im Enzkreis und in der Stadt Pforzheim. Der Bürgerschaft des Enzkreises stehen dadurch über 60 ambulante Pflegedienste zur Verfügung. <br />
+Um die Versorgungsmöglichkeiten bestmöglich auf die individuellen Bedarfe abzustimmen, finanziert der Enzkreis Beratungsstellen für ältere und pflegebedürftige Menschen. Dabei werden die ambulanten Versorgungsstrukturen besonders gefördert, was auch der bundes- und landespolitischen Ausrichtung entspricht. 
+Die Beratungsstellen haben unterschiedliche Schwerpunkte und bieten pflegebedürftigen Menschen und deren Angehörigen individuelle Unterstützung an. Die Beratungsleistungen umfassen die Themen der Pflege im Allgemeinen und der Palliativpflege, Wohnen im Alter, Demenz, ambulante Hospizdienste sowie grundlegende Informationen zur Finanzierung. Präventionsangebote, etwa zur Suchtprävention Gesundheitsförderung oder zur Förderung der Gesundheitskompetenz ergänzen das Beratungsprofil. <br />
+<br />
+<strong>ENTWICKLUNG</strong> <br />
+<br />
+Zum Stand 12/2022 gibt es im Enzkreis eine vielfältige ambulante Pflegelandschaft mit einem umfassenden und ausdifferenzierten Beratungs- und Unterstützungsangebot für ältere bzw. pflegebedürftige Menschen. Neben konventionellen ambulanten Pflegediensten gibt es in Pforzheim einen ambulanten Pflegedienst für Menschen mit türkischen Migrationshintergrund, der auch im Enzkreis tätig ist, sowie einen ambulanten Fachdienst für psychisch kranke Menschen. Für den überwiegend privatwirtschaftlich getragenen Bereich der ambulanten Pflege übernimmt der Enzkreis eine koordinierende Rolle für die Bürgerinnen und Bürger und berät diese entsprechend der individuellen Bedarfe. In einigen Kommunen werden Außensprechstunden angeboten, bei Bedarf sind auch Hausbesuche möglich. Die Beratungszahlen sind dabei in den letzten Jahren gestiegen: Wurden im Jahr 2019 noch 3.048 Klienten beraten, waren es 2021 bereits 3.435.</p>
+
+  </div>
+</div>
+
 
     
 
@@ -393,7 +407,7 @@ layout-indicator
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Beschäftigungsquote&quot;,&quot;Beschäftigungsquote 55 - 64-Jährige&quot;,&quot;&quot;]},&quot;title&quot;:&quot;gruppe.beschaeftigt&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Ambulante Pflegedienste im Enzkreis&quot;,&quot;Ambulante Pflegedienste Stadt Pforzheim (auch im Enzkreis tätig)&quot;,&quot;Anerkannte Unterstützungsangebote nach UstA-VO BW&quot;,&quot;Beratungsangebote&quot;,&quot;&quot;]},&quot;title&quot;:&quot;gruppe.beschaeftigt&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
 >
@@ -1255,12 +1269,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230317134512'></script>
+<script src='/assets/js/sdg.js?v=20230319174914'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230317134512"></script><script>
+    <script src="/assets/js/custom.js?v=20230319174914"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
