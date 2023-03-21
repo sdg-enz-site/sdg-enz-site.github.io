@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230320185851">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230321150359">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -369,10 +369,18 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Aufgrund der guten Verkehrsanbindung und seiner naturräumlichen Besonderheiten ist der Enzkreis ein beliebter Wohnstandort, an dem sich die Alterung der Bevölkerung im Landesvergleich überdurchschnittlich stark zeigt (siehe auch Hintergrundinformation demographische Entwicklung). Nach Angaben des statistischen Landesamtes hatte die Pflegequote im Enzkreis im Jahr 2021 mit 5,9 % den vierthöchsten Wert im Land (Landkreis Neckar-Odenwald 6,9 %, Stadt Pforzheim 6,3 %, Main-Tauber-Kreis 6,1 %, Landesdurchschnitt 4,9 %). Entsprechend hoch ist der zukünftige Bedarf an ambulanten und stationären Leistungen in der Pflege.<br />
+    <p>Aufgrund der guten Verkehrsanbindung und seiner naturräumlichen Besonderheiten ist der Enzkreis ein beliebter Wohnstandort, an dem sich die Alterung der Bevölkerung im Landesvergleich überdurchschnittlich stark zeigt (siehe auch Hintergrundinformation demographische Entwicklung). Nach Angaben des statistischen Landesamtes<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> hatte die Pflegequote im Enzkreis im Jahr 2021 mit 5,9 % den vierthöchsten Wert im Land (Landkreis Neckar-Odenwald 6,9 %, Stadt Pforzheim 6,3 %, Main-Tauber-Kreis 6,1 %, Landesdurchschnitt 4,9 %). Entsprechend hoch ist der zukünftige Bedarf an ambulanten und stationären Leistungen in der Pflege.<br />
 Für die Planung von Pflegeangeboten ist neben der Kenntnis der bestehenden Angebotslandschaft auch eine Vorausrechnung des zukünftigen Bedarfs notwendig. Hierfür hat der KVJS Orientierungswerte für die Planung von ambulanten, teil- und vollstationären Leistungen bis zum Jahr 2030 berechnet. Diese Grundlage dient als Steuerungs- und Planungsinstrument sowie zur Gestaltung einer leistungsfähigen regional gegliederten, wohnortnahen und aufeinander abgestimmten ambulanten und stationären pflegerischen Versorgung. Eine Aussage über die zukünftige Auslastung der Pflegeheime und Dienste bzw. deren Wirtschaftlichkeit oder die Qualität der Leistungen kann jedoch nicht getroffen werden.<br />
 Die Bereitstellung der ausdifferenzierten Versorgungsleistungen in der Pflege führt zur Entlastung von Familienangehörigen und hat somit Auswirkungen auf die Verdienstmöglichkeiten bzw. auf eine mögliche Drucksituation auf die betroffenen Familien und oftmals die Frauen in der alternden Gesellschaft. Die Planung der Versorgungsleistungen erfolgt in Abstimmung mit Nachbarkommunen.<br />
 Der Indikator bildet durch die Nebeneffekte ein breiteres Spektrum ab und kann mitunter Auswirkungen auf die psychische Konstitution von Angehörigen pflegebedürftiger Menschen haben.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Statistisches Landesamt BW (2023): PM 23/2023 <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
   </div>
 </div>
@@ -1003,155 +1011,157 @@ data-event-label="Change to Sources tab"
             <h4 class="text-center" style="margin-bottom: 10px; color: #adadad;">Klicken Sie auf die einzelnen Ziele, um die Daten unserer lokalen <br> Indikatoren für nachhaltige Entwicklung anzuzeigen.</h4>
         </div>
         <div id="carouselLowerNavigation" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+            <!-- iterate over a specified list: create the initial carousel-item and modify them in custom.js -->
             <div class="carousel-inner">
                 
-                    <div class="carousel-item active">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/1">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/1.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-1" alt="Keine Armut - Ziel 1"/>
-                            </a>
-                        </div>
+                <div class="carousel-item active">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/1">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/1.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-1" alt="Keine Armut - Ziel 1"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/2">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/2.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-2" alt="Kein Hunger - Ziel 2"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/2">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/2.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-2" alt="Kein Hunger - Ziel 2"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/3">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/3.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-3" alt="Gesundheit und Wohlergehen - Ziel 3"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/3">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/3.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-3" alt="Gesundheit und Wohlergehen - Ziel 3"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/4">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/4.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-4" alt="Hochwertige Bildung - Ziel 4"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/4">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/4.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-4" alt="Hochwertige Bildung - Ziel 4"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/5">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/5.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-5" alt="Geschlechtergleichstellung - Ziel 5"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/5">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/5.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-5" alt="Geschlechtergleichstellung - Ziel 5"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/6">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/6.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-6" alt="Sauberes Wasser und Sanitärversorgung - Ziel 6"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/6">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/6.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-6" alt="Sauberes Wasser und Sanitärversorgung - Ziel 6"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/7">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/7.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-7" alt="Bezahlbare und saubere Energie - Ziel 7"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/7">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/7.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-7" alt="Bezahlbare und saubere Energie - Ziel 7"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/8">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/8.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-8" alt="Menschenwürdige Arbeit und Wirtschaftswachstum - Ziel 8"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/8">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/8.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-8" alt="Menschenwürdige Arbeit und Wirtschaftswachstum - Ziel 8"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/9">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/9.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-9" alt="Industrie, Innovationen und Infrastruktur - Ziel 9"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/9">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/9.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-9" alt="Industrie, Innovationen und Infrastruktur - Ziel 9"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/10">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/10.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-10" alt="Weniger Ungleichheiten - Ziel 10"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/10">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/10.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-10" alt="Weniger Ungleichheiten - Ziel 10"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/11">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/11.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-11" alt="Nachhaltige Städte und Gemeinden - Ziel 11"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/11">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/11.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-11" alt="Nachhaltige Städte und Gemeinden - Ziel 11"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/12">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/12.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-12" alt="Verantwortungsvolle Konsum- und Produktionsmuster - Ziel 12"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/12">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/12.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-12" alt="Verantwortungsvolle Konsum- und Produktionsmuster - Ziel 12"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/13">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/13.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-13" alt="Maßnahmen zum Klimaschutz - Ziel 13"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/13">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/13.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-13" alt="Maßnahmen zum Klimaschutz - Ziel 13"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/14">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/14.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-14" alt="Leben unter Wasser - Ziel 14"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/14">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/14.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-14" alt="Leben unter Wasser - Ziel 14"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/15">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/15.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-15" alt="Leben an Land - Ziel 15"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/15">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/15.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-15" alt="Leben an Land - Ziel 15"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/16">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/16.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-16" alt="Frieden, Gerechtigkeit und starke Institutionen - Ziel 16"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/16">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/16.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-16" alt="Frieden, Gerechtigkeit und starke Institutionen - Ziel 16"/>
+                        </a>
                     </div>
+                </div>
                 
-                    <div class="carousel-item ">
-                        <div class="carousel-col" id="lower-nav-goal">
-                            <a href="/17">
-                                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/17.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-17" alt="Partnerschaften zur Erreichung der Ziele - Ziel 17"/>
-                            </a>
-                        </div>
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/17">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/17.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-17" alt="Partnerschaften zur Erreichung der Ziele - Ziel 17"/>
+                        </a>
                     </div>
+                </div>
                 
             </div>
             
-            <a class="carousel-control-prev" role="button" data-bs-target="#carouselLowerNavigation" data-bs-slide="prev">
+            <a class="carousel-control-prev" role="button" data-bs-target="#carouselLowerNavigation" data-bs-slide="next">
                 <span class="fa fa-chevron-left" id="nav-arrow" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </a>
-            <a class="carousel-control-next" role="button" data-bs-target="#carouselLowerNavigation" data-bs-slide="next">
+            <a class="carousel-control-next" role="button" data-bs-target="#carouselLowerNavigation" data-bs-slide="prev">
                 <span class="fa fa-chevron-right" id="nav-arrow" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </a>
         </div>
+
     </div>
 </div>
 
@@ -1265,12 +1275,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230320185851'></script>
+<script src='/assets/js/sdg.js?v=20230321150359'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230320185851"></script><script>
+    <script src="/assets/js/custom.js?v=20230321150359"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
