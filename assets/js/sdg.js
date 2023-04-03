@@ -1175,9 +1175,9 @@ $(document).ready(function() {
     });
 });
 opensdg.chartColors = function(indicatorId) {
-  var colorSet = "accessible";
+  var colorSet = "custom";
   var numberOfColors = null;
-  var customColorList = null;
+  var customColorList = ["fde55c","81ceea","fc9b29","02aef0","f07002","0275f0","e44501","010984","ae1901","010326"];
 
   this.goalNumber = parseInt(indicatorId.slice(indicatorId.indexOf('_')+1,indicatorId.indexOf('-')));
   this.goalColors = [['e5243b', '891523', 'ef7b89', '2d070b', 'f4a7b0', 'b71c2f', 'ea4f62', '5b0e17', 'fce9eb'],
