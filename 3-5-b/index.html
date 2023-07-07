@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230403072030">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230707180307">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -168,9 +168,7 @@ layout-indicator
 
         <div>
             <a class="navbar-brand" href="/" id="home">
-                <img src="/assets/img/Mission_logo.png"
-                onmouseover="this.src='/assets/img/Mission_logo.png'"
-                onmouseout="this.src='/assets/img/Mission_logo.png'"/>
+                <img src="/assets/img/Mission_logo.png"/>
             </a>
         </div>
         <div class="header-right">
@@ -369,7 +367,7 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Die Depression gilt als die häufigste Stresskrankheit des 21. Jahrhunderts – mit steigender Prävalenz gerade bei jüngeren Menschen, womit indirekt auch das Suizidrisiko ansteigt. Bei depressiv Erkrankten ist das Stressniveau dauerhaft erhöht. Depressive Episoden können daher als Folge unzureichender Bewältigung von (chronischem) Stress verstanden werden. Suizid oder Suizidversuche stellen im Bewältigungsrepertoire jeweils die Extreme dar. Die Reaktion auf Stressoren fällt unter den Geschlechtern unterschiedlich aus. Während Frauen eher mit Ängstlichkeit und Depressivität reagieren und tendenziell früher Hilfe in Anspruch nehmen, zeigen Männer öfter Aggressivität, antisoziales oder auch Suchtverhalten. Depressionen werden bei ihnen seltener oder später diagnostiziert, da sie häufiger mit männertypischen Abwehrmustern reagieren, als professionelle Hilfe anzunehmen. Die Selbstmordsterblichkeit dient als Indikator für die psychische Gesundheit der Bevölkerung. Die vollzogene Selbsttötung ist bei Männern statistisch signifikant stärker ausgeprägt und zumeist die Folge starker psychischer Belastung oder Störung. Berücksichtigt werden alle Fälle einer vorsätzlichen Selbstbeschädigung (bspw. Vergiftung, Substanzmissbrauch) oder selbstzugefügten Verletzung (bspw. durch Waffen, Gegenstände, Kraftfahrzeugunfälle) mit Todesfolge (ICD- 10-Klassifikation X60-X84). <br />
+    <p>Die Depression gilt als die häufigste Stresskrankheit des 21. Jahrhunderts – mit steigender Prävalenz gerade bei jüngeren Menschen, womit indirekt auch das Suizidrisiko ansteigt. Bei depressiv Erkrankten ist das Stressniveau dauerhaft erhöht. Depressive Episoden können daher als Folge unzureichender Bewältigung von (chronischem) Stress verstanden werden. Suizid oder Suizidversuche stellen im Bewältigungsrepertoire jeweils die Extreme dar. Die Reaktion auf Stressoren fällt unter den Geschlechtern unterschiedlich aus. Während Frauen eher mit Ängstlichkeit und Depressivität reagieren und tendenziell früher Hilfe in Anspruch nehmen, zeigen Männer öfter Aggressivität, antisoziales oder auch Suchtverhalten. Depressionen werden bei ihnen seltener oder später diagnostiziert, da sie häufiger mit männertypischen Abwehrmustern reagieren, als professionelle Hilfe anzunehmen. Die Selbstmordsterblichkeit dient als Indikator für die psychische Gesundheit der Bevölkerung. Die vollzogene Selbsttötung ist bei Männern statistisch signifikant stärker ausgeprägt und zumeist die Folge starker psychischer Belastung oder Störung. Berücksichtigt werden alle Fälle einer vorsätzlichen Selbstbeschädigung (bspw. Vergiftung, Substanzmissbrauch) oder selbstzugefügten Verletzung (bspw. durch Waffen, Gegenstände, Kraftfahrzeugunfälle) mit Todesfolge (ICD-10-Klassifikation X60-X84). <br />
 <br />
 <strong>ENTWICKLUNG</strong> <br />
 <br />
@@ -392,7 +390,7 @@ Die Zahl der absoluten Fälle von Selbsttötung oder Selbstschädigung mit Todes
   data-country="Enzkreis"
   data-charttitle="Selbsttötung und Selbstschädigung mit Todesfolge"
   data-charttitles="null"
-  data-measurementunit="Fälle absolut"
+  data-measurementunit="Anzahl Fälle (abs.)"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="bar"
@@ -787,7 +785,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Fälle absolut</p>
+            <p>Anzahl Fälle (abs.)</p>
 
           
         </td>
@@ -1163,7 +1161,7 @@ data-event-label="Change to Metadaten tab"
                                         
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
-                                    <a href="/guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
+                                    <a href="guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
                                     
                                     </li>
                             
@@ -1213,12 +1211,12 @@ data-event-label="Change to Metadaten tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230403072030'></script>
+<script src='/assets/js/sdg.js?v=20230707180307'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230403072030"></script><script>
+    <script src="/assets/js/custom.js?v=20230707180307"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

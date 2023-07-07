@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230403072030">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230707180307">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -168,9 +168,7 @@ layout-indicator
 
         <div>
             <a class="navbar-brand" href="/" id="home">
-                <img src="/assets/img/Mission_logo.png"
-                onmouseover="this.src='/assets/img/Mission_logo.png'"
-                onmouseout="this.src='/assets/img/Mission_logo.png'"/>
+                <img src="/assets/img/Mission_logo.png"/>
             </a>
         </div>
         <div class="header-right">
@@ -369,7 +367,7 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Während der vergangenen 60 Jahre haben sich die Ansprüche der Bevölkerung in Deutschland an Siedlungs- und Verkehrsflächen mehr als verdoppelt. Diese Flächen stehen im Gegensatz zur freien, also ungeplanten, nicht festgelegten Fläche. Sie sind durch verschiedenen Nutzungsarten geprägt: Der Anteil der Siedlungs- und Verkehrsfläche an der Gesamtfläche bringt vielfältige direkte und indirekte ökologische und ökonomische Konflikte mit sich. Böden sind eine endliche Ressource, die durch das Zusammenspiel von Gestein, Luft, Wasser und Lebewesen über Jahrtausende entstanden sind. Sie dient dem Natur- und Wasserhaushalt und erfüllen damit wichtige ökologische Funktionen. Einmal versiegelter Boden ist nur schwer wiederzubeleben. Eine weitere Abnahme des Naturraums führt zu einem Verlust wichtiger Boden- und Wasserhaushaltsfunktionen. Die zunehmende Verdrängung des Naturraums begünstigt die Auswirkungen des anthropogenen Klimawandels und hat erhebliche Auswirkungen auf die Widerstandsfähigkeit von Städten und Siedlungen. Die Neuinanspruchnahme von Flächen ist die Ursache eines nicht nachhaltigen und flächenextensiven Wachstumsmodells. Siedlungssysteme und deren Infrastrukturen lassen sich zudem kosten-, energie- und materialeffizienter betreiben, wenn sie stärker verdichtet sind (siehe Indikator 11.3). <br />
+    <p>Während der vergangenen 60 Jahre haben sich die Ansprüche der Bevölkerung in Deutschland an Siedlungs- und Verkehrsflächen mehr als verdoppelt. Diese Flächen stehen im Gegensatz zur freien, also ungeplanten, nicht festgelegten Fläche. Sie sind durch verschiedene Nutzungsarten geprägt: Der Anteil der Siedlungs- und Verkehrsfläche an der Gesamtfläche bringt vielfältige direkte und indirekte ökologische und ökonomische Konflikte mit sich. Böden sind eine endliche Ressource, die durch das Zusammenspiel von Gestein, Luft, Wasser und Lebewesen über Jahrtausende entstanden sind. Sie dient dem Natur- und Wasserhaushalt und erfüllt damit wichtige ökologische Funktionen. Einmal versiegelter Boden ist nur schwer wiederzubeleben. Eine weitere Abnahme des Naturraums führt zu einem Verlust wichtiger Boden- und Wasserhaushaltsfunktionen. Die zunehmende Verdrängung des Naturraums begünstigt die Auswirkungen des anthropogenen Klimawandels und hat erhebliche Auswirkungen auf die Widerstandsfähigkeit von Städten und Siedlungen. Die Neuinanspruchnahme von Flächen ist die Ursache eines nicht nachhaltigen und flächenextensiven Wachstumsmodells. Siedlungssysteme und deren Infrastrukturen lassen sich zudem kosten-, energie- und materialeffizienter betreiben, wenn sie stärker verdichtet sind (siehe Indikator 11.3). <br />
 <br />
 <strong>ENTWICKLUNG</strong> <br />
 <br />
@@ -389,24 +387,24 @@ Der Anteil der Siedlungs- und Verkehrsfläche ist im Enzkreis allein in den letz
   id="indicatorData"
   data-indicatorid='indicator_11-5'
   data-id="11-5"
-  data-country="Land BW"
+  data-country="Enzkreis"
   data-charttitle="Flächeninanspruchnahme"
-  data-charttitles="null"
-  data-measurementunit="Prozent"
+  data-charttitles="[{&quot;unit&quot;:&quot;Flächeninanspruchnahme&quot;,&quot;title&quot;:&quot;Flächeninanspruchnahme [ha]&quot;},{&quot;unit&quot;:&quot;Flächenversiegelung&quot;,&quot;title&quot;:&quot;Flächenversiegelung [ha]&quot;}]"
+  data-measurementunit="Fläche [ha]"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="bar"
-  data-graphtypes="null"
+  data-graphtype="line"
+  data-graphtypes="[{&quot;unit&quot;:&quot;Flächeninanspruchnahme&quot;,&quot;type&quot;:&quot;bar&quot;},{&quot;unit&quot;:&quot;Flächenversiegelung&quot;,&quot;type&quot;:&quot;line&quot;}]"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Enzkreis&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Land BW&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Nutzungsarten&quot;,&quot;value&quot;:&quot;Siedlungs- und Verkehrsfläche&quot;},{&quot;field&quot;:&quot;Nutzungsarten&quot;,&quot;value&quot;:&quot;Gewässer&quot;},{&quot;field&quot;:&quot;Nutzungsarten&quot;,&quot;value&quot;:&quot;Landwirtschaft&quot;},{&quot;field&quot;:&quot;Nutzungsarten&quot;,&quot;value&quot;:&quot;Berg-/Tagebau, Grube, Steinbruch&quot;},{&quot;field&quot;:&quot;Nutzungsarten&quot;,&quot;value&quot;:&quot;Wald&quot;},{&quot;field&quot;:&quot;Siedlungs- und Verkehrsfläche&quot;,&quot;value&quot;:&quot;Siedlungsfläche Enzkreis [ha]&quot;},{&quot;field&quot;:&quot;Siedlungs- und Verkehrsfläche&quot;,&quot;value&quot;:&quot;Verkehrsfläche Enzkreis [ha]&quot;}]"
   data-graphlimits="null"
-  data-stackeddisaggregation=""
+  data-stackeddisaggregation="Nutzungsarten"
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Beschäftigungsquote&quot;,&quot;Beschäftigungsquote 55 - 64-Jährige&quot;,&quot;&quot;]},&quot;title&quot;:&quot;gruppe.beschaeftigt&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Flächeninanspruchnahme&quot;,&quot;Flächenversiegelung&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Nutzungsarten&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Siedlungs- und Verkehrsfläche&quot;,&quot;Landwirtschaft&quot;,&quot;Gewässer&quot;,&quot;Berg-/Tagebau, Grube, Steinbruch&quot;,&quot;Wald&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Nutzungsarten&quot;},{&quot;name&quot;:&quot;Siedlungs- und Verkehrsfläche&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Siedlungsfläche Enzkreis [ha]&quot;,&quot;Verkehrsfläche Enzkreis [ha]&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Siedlungs- und Verkehrsfläche&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -530,7 +528,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Flächeninanspruchnahme</h4>
+          <h4 id="chart-heading" class="chart-title">Flächeninanspruchnahme [ha]</h4>
           <div id="chart" class="plot-container">
             <canvas
     role="img"
@@ -552,7 +550,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -624,7 +622,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -759,19 +757,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Definitionen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>Fläche [ha]</p>
 
           
         </td>
@@ -787,7 +778,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Prozent</p>
+            <p>Fläche [ha]</p>
 
           
         </td>
@@ -803,7 +794,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Geographische Abdeckung </th>
         <td>
           
-            <p>Land BW</p>
+            <p>Enzkreis</p>
 
           
         </td>
@@ -837,19 +828,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2015</p>
 
           
         </td>
@@ -1170,7 +1154,7 @@ data-event-label="Change to Metadaten tab"
                                         
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
-                                    <a href="/guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
+                                    <a href="guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
                                     
                                     </li>
                             
@@ -1220,12 +1204,12 @@ data-event-label="Change to Metadaten tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230403072030'></script>
+<script src='/assets/js/sdg.js?v=20230707180307'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230403072030"></script><script>
+    <script src="/assets/js/custom.js?v=20230707180307"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230403072030">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230707180307">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -168,9 +168,7 @@ layout-indicator
 
         <div>
             <a class="navbar-brand" href="/" id="home">
-                <img src="/assets/img/Mission_logo.png"
-                onmouseover="this.src='/assets/img/Mission_logo.png'"
-                onmouseout="this.src='/assets/img/Mission_logo.png'"/>
+                <img src="/assets/img/Mission_logo.png"/>
             </a>
         </div>
         <div class="header-right">
@@ -369,7 +367,7 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Bei der teilstationären- bzw. stationären Pflege erfolgt die Versorgung in einer teil- oder vollstationären Pflegeeinrichtung, d.h. als Tages- (bzw. Nachtpflege), als Kurzzeit- oder als Dauerpflege. Die Pflegebedürftigen werden vor Ort dauerhaft unter Aufsicht einer verantwortlichen Pflegekraft betreut. Die Tagespflege kann als ergänzendes Angebot zur ambulanten Pflege in Anspruch genommen werden. Kurzzeitpflegeplätze können im Gegensatz zu Dauerpflegeplätzen aus wirtschaftlicher Sicht nicht kleinräumig in allen Kommunen des Enzkreises vorgehalten werden. Häufig werden sie kurzfristig benötigt, etwa nach einem Krankenhausaufenthalt oder in Krisensituationen, um die häusliche Pflege zu stabilisieren. Bei der Bedarfsplanung neuer Angebote arbeiten der Enzkreis, die Kommunen sowie die Träger und Anbieter eng zusammen und stimmen entlang der vom KVJS BW berechneten Bedarfe weitere Schritte zu deren Umsetzung ab, um eine demographie- und bedarfsgerechte Verteilung von stationären Pflegeplätzen sicherzustellen. In kleinen Gemeinden können zudem Wohngemeinschaften für Menschen mit Unterstützungsund Versorgungsbedarf eine Alternative zum Pflegeheim darstellen. <br />
+    <p>Bei der teilstationären bzw. stationären Pflege erfolgt die Versorgung in einer teil- oder vollstationären Pflegeeinrichtung, d.h. als Tages- (bzw. Nachtpflege), als Kurzzeit- oder als Dauerpflege. Die Pflegebedürftigen werden vor Ort dauerhaft unter Aufsicht einer verantwortlichen Pflegekraft betreut. Die Tagespflege kann als ergänzendes Angebot zur ambulanten Pflege in Anspruch genommen werden. Kurzzeitpflegeplätze können im Gegensatz zu Dauerpflegeplätzen aus wirtschaftlicher Sicht nicht kleinräumig in allen Kommunen des Enzkreises vorgehalten werden. Häufig werden sie kurzfristig benötigt, etwa nach einem Krankenhausaufenthalt oder in Krisensituationen, um die häusliche Pflege zu stabilisieren. Bei der Bedarfsplanung neuer Angebote arbeiten der Enzkreis, die Kommunen sowie die Träger und Anbieter eng zusammen und stimmen entlang der vom KVJS BW berechneten Bedarfe weitere Schritte zu deren Umsetzung ab, um eine demographie- und bedarfsgerechte Verteilung von stationären Pflegeplätzen sicherzustellen. In kleinen Gemeinden können zudem Wohngemeinschaften für Menschen mit Unterstützungs- und Versorgungsbedarf eine Alternative zum Pflegeheim darstellen. <br />
 <br />
 <strong>ENTWICKLUNG</strong> <br />
 <br />
@@ -392,7 +390,7 @@ Der Enzkreis setzt sich für den Ausbau demographie- und bedarfsgerechter Angebo
   data-country="Enzkreis"
   data-charttitle="Teilstationäre und stationäre Pflegeleistungen"
   data-charttitles="null"
-  data-measurementunit="Prozent"
+  data-measurementunit=""
   data-xaxislabel=""
   data-showdata="false"
   data-graphtype="line"
@@ -415,7 +413,7 @@ Der Enzkreis setzt sich für den Ausbau demographie- und bedarfsgerechter Angebo
   
   <!-- add statistic data as image -->
   <div class="row g-0 justify-content-center">
-    <img class="col-md-7" src="/assets/img/indicator_img/3-6-c.png">
+    <img class="col-md-7" src="/assets/img/indicator_img/3-6-c.png" alt="indicator-as-image">
   </div>
   <div id="indicator-main" class="indicator-main col-md-12">
   
@@ -528,12 +526,19 @@ data-event-label="Change to Metadaten tab"
       
       
       
+        
+          
+          
+          
+          
+        
+      
       
       <tr>
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Prozent</p>
+            <p><span class="empty-metadata-placeholder"></span></p>
 
           
         </td>
@@ -544,12 +549,19 @@ data-event-label="Change to Metadaten tab"
       
       
       
+        
+          
+          
+          
+          
+        
+      
       
       <tr>
         <th scope="row">Geographische Abdeckung </th>
         <td>
           
-            <p>Enzkreis</p>
+            <p><span class="empty-metadata-placeholder"></span></p>
 
           
         </td>
@@ -923,7 +935,7 @@ data-event-label="Change to Metadaten tab"
                                         
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
-                                    <a href="/guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
+                                    <a href="guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
                                     
                                     </li>
                             
@@ -973,12 +985,12 @@ data-event-label="Change to Metadaten tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230403072030'></script>
+<script src='/assets/js/sdg.js?v=20230707180307'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230403072030"></script><script>
+    <script src="/assets/js/custom.js?v=20230707180307"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

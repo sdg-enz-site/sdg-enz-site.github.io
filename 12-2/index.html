@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230403072030">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230707180307">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -168,9 +168,7 @@ layout-indicator
 
         <div>
             <a class="navbar-brand" href="/" id="home">
-                <img src="/assets/img/Mission_logo.png"
-                onmouseover="this.src='/assets/img/Mission_logo.png'"
-                onmouseout="this.src='/assets/img/Mission_logo.png'"/>
+                <img src="/assets/img/Mission_logo.png"/>
             </a>
         </div>
         <div class="header-right">
@@ -369,7 +367,7 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Die Vermeidung bzw. Verminderung von Abfall und die Wiederverwertung von Wertstoffen ist ein Thema mit langer Tradition. Einerseits geht es um das kommunale Abfallaufkommen insgesamt, andererseits ist die Nutzung der Wertstoffe von Interesse. Der Indikator Abfallmenge beschränkt sich auf die häuslichen Abfälle und lässt betriebliche Abfälle außen vor. Für die Berechnung des kommunalen Abfallaufkommens [kg/EW] werden die gesammelten Mengen an Haus- und Sperrmüll, Grünschnitt und Bioabfall sowie alle weiteren getrennt erfassten Wertstofffraktionen (u.a. Altpapier, Altglas, Leichtverpackungen, Elektroschrott etc.) erhoben. Abfälle aus Industrie und Gewerbe, die direkt an einen privaten Entsorger zur Verwertung abgegeben werden, werden nicht in den kommunalen Abfallbilanzen dargestellt, da dieser Abfallstrom nicht in die Zuständigkeit der öffentlich- rechtlichen Entsorger fällt. Der traditionell größte Abfallstrom (Bau- und Abbruchabfälle) wird wie die Abfälle aus Produktion und Gewerbe (inkl. Klärschlamm) und der gefährlichen Abfälle nicht in der Statistik berücksichtigt. Zu den Kernaufgaben der öffentlich- rechtlichen Abfallwirtschaft gehört die Entsorgung von Abfällen aus privaten Haushalten und dem Siedlungsbereich, worunter auch Abfälle aus Gewerbebetrieben und öffentlichen Einrichtungen fallen können. Die kommunal gesammelten Siedlungsabfälle, insbesondere Wertstoffe wie Altpapier und die organischen Abfälle, werden zum Großteil stofflich verwertet, Restmüll dagegen überwiegend energetisch genutzt. Nur ein geringer Teil des inerten Restmülls wird auf die Deponie verbracht. <br />
+    <p>Die Vermeidung bzw. Verminderung von Abfall und die Wiederverwertung von Wertstoffen ist ein Thema mit langer Tradition. Einerseits geht es um das kommunale Abfallaufkommen insgesamt, andererseits ist die Nutzung der Wertstoffe von Interesse. Der Indikator Abfallmenge beschränkt sich auf die häuslichen Abfälle und lässt betriebliche Abfälle außen vor. Für die Berechnung des kommunalen Abfallaufkommens [kg/EW] werden die gesammelten Mengen an Haus- und Sperrmüll, Grünschnitt und Bioabfall sowie alle weiteren getrennt erfassten Wertstofffraktionen (u.a. Altpapier, Altglas, Leichtverpackungen, Elektroschrott etc.) erhoben. Abfälle aus Industrie und Gewerbe, die direkt an einen privaten Entsorger zur Verwertung abgegeben werden, werden nicht in den kommunalen Abfallbilanzen dargestellt, da dieser Abfallstrom nicht in die Zuständigkeit der öffentlich-rechtlichen Entsorger fällt. Der traditionell größte Abfallstrom (Bau- und Abbruchabfälle) wird wie die Abfälle aus Produktion und Gewerbe (inkl. Klärschlamm) und der gefährlichen Abfälle nicht in der Statistik berücksichtigt. Zu den Kernaufgaben der öffentlich- rechtlichen Abfallwirtschaft gehört die Entsorgung von Abfällen aus privaten Haushalten und dem Siedlungsbereich, worunter auch Abfälle aus Gewerbebetrieben und öffentlichen Einrichtungen fallen können. Die kommunal gesammelten Siedlungsabfälle, insbesondere Wertstoffe wie Altpapier und die organischen Abfälle, werden zum Großteil stofflich verwertet, Restmüll dagegen überwiegend energetisch genutzt. Nur ein geringer Teil des inerten Restmülls wird auf die Deponie verbracht. <br />
 <br />
 <strong>ENTWICKLUNG</strong> <br />
 <br />
@@ -389,24 +387,24 @@ Das kommunale Abfallaufkommen im Enzkreis unterliegt im zeitlichen Verlauf deutl
   id="indicatorData"
   data-indicatorid='indicator_12-2'
   data-id="12-2"
-  data-country="Land BW"
+  data-country="Enzkreis / Land BW"
   data-charttitle="Abfallaufkommen"
-  data-charttitles="null"
-  data-measurementunit="Prozent"
+  data-charttitles="[{&quot;unit&quot;:&quot;Kommunales Abfallaufkommen (gesamt)&quot;,&quot;title&quot;:&quot;Kommunales Abfallaufkommen (gesamt)&quot;},{&quot;unit&quot;:&quot;Aufkommen je Abfallstrom [kg/EW]&quot;,&quot;title&quot;:&quot;Aufkommen je Abfallstrom [kg/EW]&quot;}]"
+  data-measurementunit="kg/EW"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
-  data-graphtypes="null"
+  data-graphtypes="[{&quot;unit&quot;:&quot;Kommunales Abfallaufkommen (gesamt)&quot;,&quot;type&quot;:&quot;line&quot;},{&quot;unit&quot;:&quot;Aufkommen je Abfallstrom [kg/EW]&quot;,&quot;type&quot;:&quot;bar&quot;}]"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Enzkreis&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Land BW&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Abfallaufkommen&quot;,&quot;value&quot;:&quot;Abfallaufkommen [kg/EW] - Enzkreis&quot;},{&quot;field&quot;:&quot;Abfallaufkommen&quot;,&quot;value&quot;:&quot;Abfallaufkommen [kg/EW] - Land BW&quot;},{&quot;field&quot;:&quot;Abfallart&quot;,&quot;value&quot;:&quot;Haus- und Sperrmüll&quot;},{&quot;field&quot;:&quot;Abfallart&quot;,&quot;value&quot;:&quot;Wertstoffe&quot;},{&quot;field&quot;:&quot;Abfallart&quot;,&quot;value&quot;:&quot;Bio- und Grünabfälle&quot;},{&quot;field&quot;:&quot;Abfallart&quot;,&quot;value&quot;:&quot;Gewerbe- und Baustellenabfälle&quot;},{&quot;field&quot;:&quot;Abfallart&quot;,&quot;value&quot;:&quot;Elektro-/Elektronikaltgeräte&quot;},{&quot;field&quot;:&quot;Abfallart&quot;,&quot;value&quot;:&quot;Sonstige Abfälle&quot;}]"
   data-graphlimits="null"
-  data-stackeddisaggregation=""
+  data-stackeddisaggregation="Abfallart"
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Beschäftigungsquote&quot;,&quot;Beschäftigungsquote 55 - 64-Jährige&quot;,&quot;&quot;]},&quot;title&quot;:&quot;gruppe.beschaeftigt&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Kommunales Abfallaufkommen (gesamt)&quot;,&quot;Aufkommen je Abfallstrom [kg/EW]&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Abfallart&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Haus- und Sperrmüll&quot;,&quot;Wertstoffe&quot;,&quot;Bio- und Grünabfälle&quot;,&quot;Gewerbe- und Baustellenabfälle&quot;,&quot;Elektro-/Elektronikaltgeräte&quot;,&quot;Sonstige Abfälle&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Abfallart&quot;},{&quot;name&quot;:&quot;Abfallaufkommen&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Abfallaufkommen [kg/EW] - Enzkreis&quot;,&quot;Abfallaufkommen [kg/EW] - Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Abfallaufkommen&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -530,7 +528,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Abfallaufkommen</h4>
+          <h4 id="chart-heading" class="chart-title">Kommunales Abfallaufkommen (gesamt)</h4>
           <div id="chart" class="plot-container">
             <canvas
     role="img"
@@ -552,7 +550,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis / Land BW</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -624,7 +622,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis / Land BW</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -787,7 +785,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Prozent</p>
+            <p>kg/EW</p>
 
           
         </td>
@@ -803,7 +801,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Geographische Abdeckung </th>
         <td>
           
-            <p>Land BW</p>
+            <p>Enzkreis / Land BW</p>
 
           
         </td>
@@ -837,19 +835,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2010</p>
 
           
         </td>
@@ -1170,7 +1161,7 @@ data-event-label="Change to Metadaten tab"
                                         
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
-                                    <a href="/guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
+                                    <a href="guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
                                     
                                     </li>
                             
@@ -1220,12 +1211,12 @@ data-event-label="Change to Metadaten tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230403072030'></script>
+<script src='/assets/js/sdg.js?v=20230707180307'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230403072030"></script><script>
+    <script src="/assets/js/custom.js?v=20230707180307"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

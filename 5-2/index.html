@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230403072030">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230707180307">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -168,9 +168,7 @@ layout-indicator
 
         <div>
             <a class="navbar-brand" href="/" id="home">
-                <img src="/assets/img/Mission_logo.png"
-                onmouseover="this.src='/assets/img/Mission_logo.png'"
-                onmouseout="this.src='/assets/img/Mission_logo.png'"/>
+                <img src="/assets/img/Mission_logo.png"/>
             </a>
         </div>
         <div class="header-right">
@@ -369,14 +367,15 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Noch immer existieren signifikante Einkommensunterschiede zwischen weiblichen und männlichen Arbeitnehmern. Diese Unterschiede sind z.T. auf die Wahl unterschiedlicher Berufe in verschiedenen Branchen, den Aufstieg in den unterschiedlich vergüteten Hierarchiegruppen und die Berücksichtigung von Berufserfahrung zurückzuführen. Zudem wirkt sich eine familienbedingte Arbeitsunterbrechung negativ auf das Einkommen aus. Frauen werden trotz Diskriminierungsverbots für gleichwertige Arbeit teilweise niedriger entlohnt. Bei der Betrachtung des Medianeinkommens[^1] werden lediglich Informationen vollzeitbeschäftigter Frauen und Männer herangezogen; informelle[^2] und Teilzeitbeschäftigungsverhältnisse werden nicht berücksichtigt. Dies ist vor allem dann problematisch, wenn systematische Unterschiede zwischen Frauen und Männern auf dem Arbeitsmarkt bestehen, wie bspw. in der Besetzung von Führungspositionen. <br />
+    <p>Noch immer existieren signifikante Einkommensunterschiede zwischen weiblichen und männlichen Arbeitnehmern. Diese Unterschiede sind z.T. auf die Wahl unterschiedlicher Berufe in verschiedenen Branchen, den Aufstieg in den unterschiedlich vergüteten Hierarchiegruppen und die Berücksichtigung von Berufserfahrung zurückzuführen. Zudem wirkt sich eine familienbedingte Arbeitsunterbrechung negativ auf das Einkommen aus. Frauen werden trotz des Diskriminierungsverbots für gleichwertige Arbeit teilweise niedriger entlohnt. Bei der Betrachtung des Medianeinkommens<sup>1</sup> werden lediglich Informationen vollzeitbeschäftigter Frauen und Männer herangezogen; informelle<sup>2</sup> und Teilzeitbeschäftigungsverhältnisse werden nicht berücksichtigt. Dies ist vor allem dann problematisch, wenn systematische Unterschiede zwischen Frauen und Männern auf dem Arbeitsmarkt bestehen wie bspw. in der Besetzung von Führungspositionen. <br />
 <br />
 <strong>ENTWICKLUNG</strong> <br />
 <br />
-Das Einkommen ist im Enzkreis zwischen Männern und Frauen ungleich verteilt. Zwar steigen die Einkommen von Männern und Frauen über den Betrachtungszeitraum proportional an, der Verdienstabstand bleibt dadurch jedoch der Gleiche. Durchschnittlich verfügen Frauen im Enzkreis nur über 76 % des Medianeinkommens von Männern. Der Verdienstabstand liegt im Enzkreis auf dem gleichen Niveau wie der Landesdurchschnitt. <br />
-<br />
-[^1]: Der Median ist der Wert, der genau in der Mitte einer Datenreihe liegt. Das Medianeinkommen beschreibt demnach den mittleren Wert aller betrachteten Einkommen. <br />
-[^2]: Informelle Tätigkeiten unterliegen keinem staatlichen Schutz und keiner Registrierung wie die Durchführung von Kleinreparaturen oder der Verkauf eigener Produkte und Dienstleistungen.</p>
+Das Einkommen ist im Enzkreis zwischen Männern und Frauen ungleich verteilt. Zwar steigen die Einkommen von Männern und Frauen über den Betrachtungszeitraum proportional an, der Verdienstabstand bleibt dadurch jedoch der gleiche. Durchschnittlich verfügen Frauen im Enzkreis nur über 76 % des Medianeinkommens von Männern. Der Verdienstabstand liegt im Enzkreis auf dem gleichen Niveau wie der Landesdurchschnitt.<br />
+<br /></p>
+<p><sup>1</sup> Der Median ist der Wert, der genau in der Mitte einer Datenreihe liegt. Das Medianeinkommen beschreibt demnach den mittleren Wert aller betrachteten Einkommen.</p>
+<p><sup>2</sup> Informelle Tätigkeiten unterliegen keinem staatlichen Schutz und keiner Registrierung, wie z.B. die Durchführung von Kleinreparaturen oder der Verkauf eigener Produkte und Dienstleistungen.</p>
+<p><br /></p>
 
   </div>
 </div>
@@ -392,24 +391,24 @@ Das Einkommen ist im Enzkreis zwischen Männern und Frauen ungleich verteilt. Zw
   id="indicatorData"
   data-indicatorid='indicator_5-2'
   data-id="5-2"
-  data-country="Land BW"
+  data-country="Enzkreis / Land BW"
   data-charttitle="Medianeinkommen und Verdienstabstand (Gender Pay Gap)"
-  data-charttitles="null"
-  data-measurementunit="Prozent"
+  data-charttitles="[{&quot;unit&quot;:&quot;Medianeinkommen [€]&quot;,&quot;title&quot;:&quot;Medianeinkommen im Enzkreis [€]&quot;},{&quot;unit&quot;:&quot;Verdienstabstand [%]&quot;,&quot;title&quot;:&quot;Verdienstabstand [%]&quot;}]"
+  data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
-  data-graphtypes="null"
+  data-graphtypes="[{&quot;unit&quot;:&quot;Medianeinkommen [€]&quot;,&quot;type&quot;:&quot;bar&quot;},{&quot;unit&quot;:&quot;Verdienstabstand [%]&quot;,&quot;type&quot;:&quot;line&quot;}]"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Enzkreis&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Land BW&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Einkommensverteilung&quot;,&quot;value&quot;:&quot;Medianeinkommen - gesamt [€]&quot;},{&quot;field&quot;:&quot;Einkommensverteilung&quot;,&quot;value&quot;:&quot;Medianeinkommen - Frauen [€]&quot;},{&quot;field&quot;:&quot;Einkommensverteilung&quot;,&quot;value&quot;:&quot;Medianeinkommen - Männer [€]&quot;},{&quot;field&quot;:&quot;Einkommensverteilung&quot;,&quot;value&quot;:&quot;Verdienstabstand Frauen und Männer - Land BW [%]&quot;},{&quot;field&quot;:&quot;Einkommensverteilung&quot;,&quot;value&quot;:&quot;Verdienstabstand Frauen und Männer - Enzkreis [%]&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Medianeinkommen gesamt&quot;,&quot;Medianeinkommen - Männer&quot;,&quot;Medianeinkommen - Frauen&quot;,&quot;Verdienstabstand Frauen - Männer&quot;,&quot;&quot;]},&quot;title&quot;:&quot;gruppe.beschaeftigt&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Medianeinkommen [€]&quot;,&quot;Verdienstabstand [%]&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Einkommensverteilung&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Medianeinkommen - gesamt [€]&quot;,&quot;Medianeinkommen - Männer [€]&quot;,&quot;Medianeinkommen - Frauen [€]&quot;,&quot;Verdienstabstand Frauen und Männer - Enzkreis [%]&quot;,&quot;Verdienstabstand Frauen und Männer - Land BW [%]&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Einkommensverteilung&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -533,7 +532,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Medianeinkommen und Verdienstabstand (Gender Pay Gap)</h4>
+          <h4 id="chart-heading" class="chart-title">Medianeinkommen im Enzkreis [€]</h4>
           <div id="chart" class="plot-container">
             <canvas
     role="img"
@@ -555,7 +554,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis / Land BW</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -627,7 +626,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis / Land BW</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -762,6 +761,22 @@ data-event-label="Change to Metadaten tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Definitionen </th>
+        <td>
+          
+            <p>Medianeinkommen [€] / Verdienstabstand [%]</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
           
@@ -771,7 +786,7 @@ data-event-label="Change to Metadaten tab"
       
       
       <tr>
-        <th scope="row">Definitionen </th>
+        <th scope="row">Einheit </th>
         <td>
           
             <p><span class="empty-metadata-placeholder"></span></p>
@@ -787,26 +802,10 @@ data-event-label="Change to Metadaten tab"
       
       
       <tr>
-        <th scope="row">Einheit </th>
-        <td>
-          
-            <p>Prozent</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-      
-      <tr>
         <th scope="row">Geographische Abdeckung </th>
         <td>
           
-            <p>Land BW</p>
+            <p>Enzkreis / Land BW</p>
 
           
         </td>
@@ -840,19 +839,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2014</p>
 
           
         </td>
@@ -1173,7 +1165,7 @@ data-event-label="Change to Metadaten tab"
                                         
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
-                                    <a href="/guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
+                                    <a href="guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
                                     
                                     </li>
                             
@@ -1223,12 +1215,12 @@ data-event-label="Change to Metadaten tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230403072030'></script>
+<script src='/assets/js/sdg.js?v=20230707180307'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230403072030"></script><script>
+    <script src="/assets/js/custom.js?v=20230707180307"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

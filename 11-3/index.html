@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230403072030">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230707180307">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -168,9 +168,7 @@ layout-indicator
 
         <div>
             <a class="navbar-brand" href="/" id="home">
-                <img src="/assets/img/Mission_logo.png"
-                onmouseover="this.src='/assets/img/Mission_logo.png'"
-                onmouseout="this.src='/assets/img/Mission_logo.png'"/>
+                <img src="/assets/img/Mission_logo.png"/>
             </a>
         </div>
         <div class="header-right">
@@ -373,7 +371,7 @@ layout-indicator
 <br />
 <strong>ENTWICKLUNG</strong> <br />
 <br />
-Die Wohnflächeninanspruchnahme pro Person liegt im Enzkreis deutlich über dem Landesdurchschnitt, was für ländlich geprägte Umlandregionen nicht unüblich ist. In urbanen Zentren liegen die Preise für Wohnraum durchschnittlich höher, was sich in einer geringeren Flächeninanspruchnahme pro Person wiederspiegelt. Aufgrund gesellschaftlicher Tendenzen (mehr Familien und zusammenlebende Paare in Umlandregionen) ist auch die durchschnittliche Anzahl der Personen pro Wohneinheit höher als im Landesvergleich.</p>
+Die Wohnflächeninanspruchnahme pro Person liegt im Enzkreis deutlich über dem Landesdurchschnitt, was für ländlich geprägte Umlandregionen nicht unüblich ist. In urbanen Zentren liegen die Preise für Wohnraum durchschnittlich höher, was sich in einer geringeren Flächeninanspruchnahme pro Person widerspiegelt. Aufgrund gesellschaftlicher Tendenzen (mehr Familien und zusammenlebende Paare in Umlandregionen) ist auch die durchschnittliche Anzahl der Personen pro Wohneinheit höher als im Landesvergleich.</p>
 
   </div>
 </div>
@@ -389,14 +387,14 @@ Die Wohnflächeninanspruchnahme pro Person liegt im Enzkreis deutlich über dem 
   id="indicatorData"
   data-indicatorid='indicator_11-3'
   data-id="11-3"
-  data-country="Land BW"
+  data-country="Enzkreis, Land BW"
   data-charttitle="Wohnflächeninanspruchnahme pro Person"
-  data-charttitles="null"
-  data-measurementunit="Prozent"
+  data-charttitles="[{&quot;unit&quot;:&quot;Wohnfläche pro Person [m²]&quot;,&quot;title&quot;:&quot;Wohnfläche pro Person [m²]&quot;},{&quot;unit&quot;:&quot;Einwohner pro Wohnung&quot;,&quot;title&quot;:&quot;Einwohner pro Wohnung&quot;}]"
+  data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
-  data-graphtypes="null"
+  data-graphtypes="[{&quot;unit&quot;:&quot;Wohnfläche pro Person [m²]&quot;,&quot;type&quot;:&quot;bar&quot;},{&quot;unit&quot;:&quot;Einwohner pro Wohnung&quot;,&quot;type&quot;:&quot;line&quot;}]"
   data-geocoderegex=""
   data-showmap=""
   data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Enzkreis&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Land BW&quot;}]"
@@ -406,7 +404,7 @@ Die Wohnflächeninanspruchnahme pro Person liegt im Enzkreis deutlich über dem 
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Beschäftigungsquote&quot;,&quot;Beschäftigungsquote 55 - 64-Jährige&quot;,&quot;&quot;]},&quot;title&quot;:&quot;gruppe.beschaeftigt&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Einwohner pro Wohnung&quot;,&quot;Wohnfläche pro Person [m²]&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -530,7 +528,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Wohnflächeninanspruchnahme pro Person</h4>
+          <h4 id="chart-heading" class="chart-title">Wohnfläche pro Person [m²]</h4>
           <div id="chart" class="plot-container">
             <canvas
     role="img"
@@ -552,7 +550,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis, Land BW</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -624,7 +622,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis, Land BW</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -782,12 +780,19 @@ data-event-label="Change to Metadaten tab"
       
       
       
+        
+          
+          
+          
+          
+        
+      
       
       <tr>
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Prozent</p>
+            <p><span class="empty-metadata-placeholder"></span></p>
 
           
         </td>
@@ -803,7 +808,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Geographische Abdeckung </th>
         <td>
           
-            <p>Land BW</p>
+            <p>Enzkreis, Land BW</p>
 
           
         </td>
@@ -865,7 +870,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Statistisches Landesamt Baden-Württemberg; eigene Darstellung</p>
+            <p>Statistisches Landesamt Baden-Württemberg</p>
 
           
         </td>
@@ -1170,7 +1175,7 @@ data-event-label="Change to Metadaten tab"
                                         
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
-                                    <a href="/guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
+                                    <a href="guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
                                     
                                     </li>
                             
@@ -1220,12 +1225,12 @@ data-event-label="Change to Metadaten tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230403072030'></script>
+<script src='/assets/js/sdg.js?v=20230707180307'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230403072030"></script><script>
+    <script src="/assets/js/custom.js?v=20230707180307"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

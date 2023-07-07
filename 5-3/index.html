@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230403072030">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230707180307">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -168,9 +168,7 @@ layout-indicator
 
         <div>
             <a class="navbar-brand" href="/" id="home">
-                <img src="/assets/img/Mission_logo.png"
-                onmouseover="this.src='/assets/img/Mission_logo.png'"
-                onmouseout="this.src='/assets/img/Mission_logo.png'"/>
+                <img src="/assets/img/Mission_logo.png"/>
             </a>
         </div>
         <div class="header-right">
@@ -369,7 +367,8 @@ layout-indicator
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>Der Armutsbegriff wurde beim SDG 1 „Keine Armut“ behandelt. Armut ist über die Geschlechter jedoch nicht gleich verteilt. Der Indikator gibt an, wie hoch der jeweilige Anteil von Frauen und Männern mit Bezug von Grundsicherung für Arbeitsuchende (nach SGB II) an den Arbeitslosen insgesamt ist. Die Grundsicherung für Arbeitsuchende nach dem SGB II soll die Absicherung des Existenzminimums, also die Sicherung des zum Leben Notwendigen, sicherstellen. Diese Absicherung ist für alle gedacht, die zu wenig oder keine eigenen Mittel zur Verfügung haben. Es wird umgangssprachlich oft als „Hartz IV“ bezeichnet. Der Index nimmt den Wert 100 an, wenn der Anteil von Frauen mit Leistungsbezug genauso hoch ist wie der Anteil von Männern. Ein Wert über 100 zeigt eine höhere Quote von Frauen mit Leistungsbezug im Vergleich zur Quote der Männer, also eine im Geschlechterverhältnis stärkere Armutsbetroffenheit von Frauen gegenüber Männern an. Der Indikator kann lediglich die materielle Armut abbilden. Im Ersten Armutsbericht Baden-Württemberg (2015) wird Zeitarmut als eine „verdeckte“ Form der Armut angesprochen, die besonders Frauen betrifft, vor allem Mütter minderjähriger Kinder und solche, die unentgeltliche Care-Leistungen für hilfebedürftige Angehörige erbringen. Demzufolge kann die Zeitarmut durch Carearbeit ein mindestens genauso großer Konflikt sein wie monetäre/materielle Armut. <br />
+    <p>Der Armutsbegriff wurde beim SDG 1 „Keine Armut“ behandelt. Armut ist über die Geschlechter jedoch nicht gleich verteilt. Der Indikator gibt an, wie hoch der jeweilige Anteil von Frauen und Männern mit Bezug von Grundsicherung für Arbeitsuchende (nach SGB II) an den Arbeitsuchenden insgesamt ist. Die Grundsicherung für Arbeitsuchende nach dem SGB II soll die Absicherung des Existenzminimums, also die Sicherung des zum Leben Notwendigen, sicherstellen. Diese Absicherung ist für alle gedacht, die zu wenig oder keine eigenen Mittel zur Verfügung haben. Sie wird umgangssprachlich oft als „Hartz IV“ bezeichnet. <br />
+Der Index nimmt den Wert 100 an, wenn der Anteil von Frauen mit Leistungsbezug genauso hoch ist wie der Anteil von Männern. Ein Wert über 100 zeigt eine höhere Quote von Frauen mit Leistungsbezug im Vergleich zur Quote der Männer, also eine im Geschlechterverhältnis stärkere Armutsbetroffenheit von Frauen gegenüber Männern an. Der Indikator kann lediglich die materielle Armut abbilden. Im Ersten Armutsbericht Baden-Württemberg (2015) wird Zeitarmut als eine „verdeckte“ Form der Armut angesprochen, die besonders Frauen betrifft, vor allem Mütter minderjähriger Kinder und solche, die unentgeltliche Care-Leistungen für hilfebedürftige Angehörige erbringen. Demzufolge kann die Zeitarmut durch Carearbeit ein mindestens genauso großer Konflikt sein wie monetäre/materielle Armut. <br />
 <br />
 <strong>ENTWICKLUNG</strong> <br />
 <br />
@@ -389,24 +388,24 @@ layout-indicator
   id="indicatorData"
   data-indicatorid='indicator_5-3'
   data-id="5-3"
-  data-country="Land BW"
+  data-country="Enzkreis"
   data-charttitle="Relative Armut von Frauen und Männern"
-  data-charttitles="null"
-  data-measurementunit="Prozent"
+  data-charttitles="[{&quot;unit&quot;:&quot;Relative Armut von Frauen und Männern [%]&quot;,&quot;title&quot;:&quot;Relative Armut von Frauen und Männern [%]&quot;},{&quot;unit&quot;:&quot;Armutsproportionen [Index]&quot;,&quot;title&quot;:&quot;Armutsproportionen [Index]&quot;}]"
+  data-measurementunit="Anteil [%] / Index"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
-  data-graphtypes="null"
+  data-graphtypes="[{&quot;unit&quot;:&quot;Relative Armut von Frauen und Männern [%]&quot;,&quot;type&quot;:&quot;bar&quot;},{&quot;unit&quot;:&quot;Armutsproportionen&quot;,&quot;type&quot;:&quot;line&quot;}]"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Enzkreis&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Land BW&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Verhältnis&quot;,&quot;value&quot;:&quot;Frauen (Enzkreis)&quot;},{&quot;field&quot;:&quot;Verhältnis&quot;,&quot;value&quot;:&quot;Männer (Enzkreis)&quot;},{&quot;field&quot;:&quot;Verhältnis&quot;,&quot;value&quot;:&quot;Index&quot;}]"
   data-graphlimits="null"
-  data-stackeddisaggregation=""
+  data-stackeddisaggregation="Armutsproportionen"
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Frauen&quot;,&quot;Männer&quot;,&quot;Index&quot;,&quot;&quot;]},&quot;title&quot;:&quot;gruppe.beschaeftigt&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Relative Armut von Frauen und Männern [%]&quot;,&quot;Armutsproportionen [Index]&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Verhältnis&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Frauen (Enzkreis)&quot;,&quot;Männer (Enzkreis)&quot;,&quot;Index&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Verhältnis&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -530,7 +529,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Relative Armut von Frauen und Männern</h4>
+          <h4 id="chart-heading" class="chart-title">Relative Armut von Frauen und Männern [%]</h4>
           <div id="chart" class="plot-container">
             <canvas
     role="img"
@@ -552,7 +551,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -624,7 +623,7 @@ data-event-label="Change to Table tab"
 
         
         <dt>Geographische Abdeckung:</dt>
-        <dd>Land BW</dd>
+        <dd>Enzkreis</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -787,7 +786,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Prozent</p>
+            <p>Anteil [%] / Index</p>
 
           
         </td>
@@ -803,7 +802,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Geographische Abdeckung </th>
         <td>
           
-            <p>Land BW</p>
+            <p>Enzkreis</p>
 
           
         </td>
@@ -837,19 +836,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2007</p>
 
           
         </td>
@@ -865,7 +857,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>Bertelsmann Stiftung / Wegweiser Kommune</p>
+            <p>BBSR INKAR</p>
 
           
         </td>
@@ -1170,7 +1162,7 @@ data-event-label="Change to Metadaten tab"
                                         
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
-                                    <a href="/guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
+                                    <a href="guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
                                     
                                     </li>
                             
@@ -1220,12 +1212,12 @@ data-event-label="Change to Metadaten tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230403072030'></script>
+<script src='/assets/js/sdg.js?v=20230707180307'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230403072030"></script><script>
+    <script src="/assets/js/custom.js?v=20230707180307"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

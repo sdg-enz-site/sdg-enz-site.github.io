@@ -132,7 +132,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/assets/css/style.css?v=20230403072030">
+        <link rel="stylesheet" href="/assets/css/style.css?v=20230707180307">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -168,9 +168,7 @@ layout-indicator
 
         <div>
             <a class="navbar-brand" href="/" id="home">
-                <img src="/assets/img/Mission_logo.png"
-                onmouseover="this.src='/assets/img/Mission_logo.png'"
-                onmouseout="this.src='/assets/img/Mission_logo.png'"/>
+                <img src="/assets/img/Mission_logo.png"/>
             </a>
         </div>
         <div class="header-right">
@@ -373,7 +371,7 @@ layout-indicator
 <br />
 <strong>ENTWICKLUNG</strong> <br />
 <br />
-Die Einbürgerungen von Ausländerinnen und Ausländern nehmen im Enzkreis im Trend zu, wobei die Geschlechterproportion über den gesamten Betrachtungszeitraum gleich verteilt bleibt. Die Altersgruppen der unter 18-Jährigen und der über 50-Jährigen stellen bei den Einbürgerungen den kleinsten Anteil dar. Im Enzkreis waren im Jahr 2021 48 % der eingebürgerten Menschen zwischen 30 und 50 Jahre alt, weitere 32 % waren 18 bis 29.</p>
+Die Einbürgerungen von Ausländern/-innen nehmen im Enzkreis im Trend zu, wobei die Geschlechterproportion über den gesamten Betrachtungszeitraum gleich verteilt bleibt. Die Altersgruppen der unter 18-Jährigen und der über 50-Jährigen stellen bei den Einbürgerungen den kleinsten Anteil dar. Im Enzkreis waren im Jahr 2021 48 % der eingebürgerten Menschen zwischen 30 und 50 Jahre alt, weitere 32 % waren 18 bis 29.</p>
 
   </div>
 </div>
@@ -391,22 +389,22 @@ Die Einbürgerungen von Ausländerinnen und Ausländern nehmen im Enzkreis im Tr
   data-id="10-4"
   data-country="Enzkreis"
   data-charttitle="Einbürgerungen"
-  data-charttitles="null"
-  data-measurementunit="Anzahl"
+  data-charttitles="[{&quot;unit&quot;:&quot;Anzahl der Personen nach Geschlecht&quot;,&quot;title&quot;:&quot;Anzahl der Personen nach Geschlecht&quot;},{&quot;unit&quot;:&quot;Anzahl der Personen nach Alter&quot;,&quot;title&quot;:&quot;Anzahl der Personen nach Alter&quot;}]"
+  data-measurementunit="Anzahl der Personen"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="bar"
-  data-graphtypes="null"
+  data-graphtype="line"
+  data-graphtypes="[{&quot;unit&quot;:&quot;Anzahl der Personen nach Geschlecht&quot;,&quot;type&quot;:&quot;bar&quot;,&quot;graph_stacked_disaggregation&quot;:&quot;Geschlecht&quot;},{&quot;unit&quot;:&quot;Anzahl der Personen nach Alter&quot;,&quot;type&quot;:&quot;bar&quot;,&quot;graph_stacked_disaggregation&quot;:&quot;Alter&quot;}]"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="[{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Enzkreis&quot;},{&quot;field&quot;:&quot;Region&quot;,&quot;value&quot;:&quot;Land BW&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Geschlecht&quot;,&quot;value&quot;:&quot;Frauen&quot;},{&quot;field&quot;:&quot;Geschlecht&quot;,&quot;value&quot;:&quot;Männer&quot;},{&quot;field&quot;:&quot;Alter&quot;,&quot;value&quot;:&quot;Unter 18-Jährige&quot;},{&quot;field&quot;:&quot;Alter&quot;,&quot;value&quot;:&quot;18- bis unter 30-Jährige&quot;},{&quot;field&quot;:&quot;Alter&quot;,&quot;value&quot;:&quot;30- bis unter 50-Jährige&quot;},{&quot;field&quot;:&quot;Alter&quot;,&quot;value&quot;:&quot;50-Jährige und älter&quot;}]"
   data-graphlimits="null"
-  data-stackeddisaggregation=""
+  data-stackeddisaggregation="Alter"
   data-graphannotations="null"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Region&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Enzkreis&quot;,&quot;Land BW&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Region&quot;},{&quot;name&quot;:&quot;gruppe.beschaeftigt&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Beschäftigungsquote&quot;,&quot;Beschäftigungsquote 55 - 64-Jährige&quot;,&quot;&quot;]},&quot;title&quot;:&quot;gruppe.beschaeftigt&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Anzahl der Personen nach Geschlecht&quot;,&quot;Anzahl der Personen nach Alter&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Geschlecht&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Frauen&quot;,&quot;Männer&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Geschlecht&quot;},{&quot;name&quot;:&quot;Alter&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Unter 18-Jährige&quot;,&quot;18- bis unter 30-Jährige&quot;,&quot;30- bis unter 50-Jährige&quot;,&quot;50-Jährige und älter&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Alter&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -530,7 +528,7 @@ data-event-label="Change to Table tab"
     <div id="selectionsChart">
       <figure role="group">
         <div id="chart-canvas">
-          <h4 id="chart-heading" class="chart-title">Einbürgerungen</h4>
+          <h4 id="chart-heading" class="chart-title">Anzahl der Personen nach Geschlecht</h4>
           <div id="chart" class="plot-container">
             <canvas
     role="img"
@@ -787,7 +785,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Anzahl</p>
+            <p>Anzahl der Personen</p>
 
           
         </td>
@@ -837,19 +835,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder"></span></p>
+            <p>2007</p>
 
           
         </td>
@@ -1170,7 +1161,7 @@ data-event-label="Change to Metadaten tab"
                                         
                                     </li>
                             <li style="color:white;margin: 15px;font-weight: bold;">
-                                    <a href="/guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
+                                    <a href="guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
                                     
                                     </li>
                             
@@ -1220,12 +1211,12 @@ data-event-label="Change to Metadaten tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/assets/js/sdg.js?v=20230403072030'></script>
+<script src='/assets/js/sdg.js?v=20230707180307'></script>
 
 
     
     
-    <script src="/assets/js/custom.js?v=20230403072030"></script><script>
+    <script src="/assets/js/custom.js?v=20230707180307"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
