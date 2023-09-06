@@ -2856,7 +2856,6 @@ header {
 
 .col-lg-5 {
   width: auto;
-  height: max-content;
   padding-bottom: 2rem; }
   @media screen and (min-width: 992px) {
     .col-lg-5 {
@@ -2897,8 +2896,7 @@ header {
     .card .cont > .cont-span {
       vertical-align: middle; }
   .card .card-img-top {
-    width: 100%;
-    height: max-content; }
+    width: 100%; }
 
 .card:hover {
   background-color: #7d7900; }
